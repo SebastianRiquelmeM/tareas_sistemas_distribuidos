@@ -4,7 +4,9 @@ const fs = require('fs');
 
 //var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
 
-var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
+//var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
+
+var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n")
 
 const mysql = require('mysql');
 
@@ -39,11 +41,11 @@ for(let i=0; i<urls.length; i++){
 
             var keywords = $('meta[name=keywords]').attr('content') == undefined ? $('meta[name=KEYWORDS]').attr('content') : $('meta[name=keywords]').attr('content');
 
-            //console.log(i, "\n")
-            //console.log("URL: ",urls[i],"\n")
-            //console.log("TITLE: ",title,"\n")
-            //console.log("KEYWORDS: ",keywords,"\n")
-            //console.log("DESCRIPTION: ",description, "\n\n\n")
+            console.log(i, "\n")
+            console.log("URL: ",urls[i],"\n")
+            console.log("TITLE: ",title,"\n")
+            console.log("KEYWORDS: ",keywords,"\n")
+            console.log("DESCRIPTION: ",description, "\n\n\n")
 
             let arr_keywords
 
@@ -69,32 +71,42 @@ for(let i=0; i<urls.length; i++){
             if(description == undefined){
                 description = ""
             }
-            if(keywords == undefined){
+            /*if(keywords == undefined){
                 keywords = ""
             }
-
+*/
             var contador = 1;
             
-            var sql = `INSERT INTO urls (title, description, URL) VALUES ('${title}', '${description}', '${URL}')`;
+            var sql = `INSERT INTO urls (title, description, URL) VALUES ("${title}", "${description}", "${URL}")`;
             con.query(sql, function (err, result) {
+
               if (err){
-                throw err
+                  //throw err;
+                  console.log(err);
               }
               else{
-                console.log(`${URL} Inserted in DB`);
-                for(let i=0; i<arr_keywords.length; i++){
-                    let sql2 = `INSERT INTO keywords (id_url, keyword) VALUES ('${contador}', '${arr_keywords[i]}')`;
-                    con.query(sql2, function (err, result) {
-                        if (err){
-                          throw err
-                        }
-                        else{
-                            console.log('keyword insertada')
-                        }
-                    })
-                }
-                contador++;
+                  console.log(`${URL} Inserted in DB table links`);
+                  console.log("arr_keywords: ", arr_keywords)
+                  if(keywords != undefined){
+                  
+                    for(let j=0; j<arr_keywords.length; j++){
+
+                        let sql2 = `INSERT INTO keywords (id_url, keyword) VALUES ("${contador}", "${arr_keywords[j]}")`;
+                        con.query(sql2, function (err, result) {
+                            if (err){
+                              console.log(err);
+                            }
+                            else{
+                                console.log('keyword insertada in table keywords')
+                            }
+                        })
+
+                    }
+                    
+                  }
+                  contador++;
               }
+
             });
 
 
