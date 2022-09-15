@@ -2,11 +2,10 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const fs = require('fs');
 
-//var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
 
-//var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
+var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
 
-var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n")
+//var urls = fs.readFileSync('./linksito.txt').toString().split("\n")
 
 const mysql = require('mysql');
 
@@ -14,7 +13,11 @@ const con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "rootpass",
-    database: "distribuidos"
+    database: "distribuidos",
+    connectTimeout: 99999999,
+    acquireTimeout: 99999999,
+    waitForConnections: true,
+    queueLimit: 0
   });
 
 con.connect(function(err) {
@@ -42,10 +45,10 @@ for(let i=0; i<urls.length; i++){
             var keywords = $('meta[name=keywords]').attr('content') == undefined ? $('meta[name=KEYWORDS]').attr('content') : $('meta[name=keywords]').attr('content');
 
             console.log(i, "\n")
-            console.log("URL: ",urls[i],"\n")
-            console.log("TITLE: ",title,"\n")
-            console.log("KEYWORDS: ",keywords,"\n")
-            console.log("DESCRIPTION: ",description, "\n\n\n")
+            //console.log("URL: ",urls[i],"\n")
+            //console.log("TITLE: ",title,"\n")
+            //console.log("KEYWORDS: ",keywords,"\n")
+            //console.log("DESCRIPTION: ",description, "\n\n\n")
 
             let arr_keywords
 
@@ -58,8 +61,8 @@ for(let i=0; i<urls.length; i++){
                 }
             }
             
-            console.log(i, "\n")
-            console.log("URL: ", URL,"\n")
+            //console.log(i, "\n")
+            //console.log("URL: ", URL,"\n")
             /*
             console.log("TITLE: ",title,"\n")
             console.log("KEYWORDS: ",arr_keywords,"\n")
@@ -75,37 +78,43 @@ for(let i=0; i<urls.length; i++){
                 keywords = ""
             }
 */
-            var contador = 1;
+            //var contador = 1;
             
             var sql = `INSERT INTO urls (title, description, URL) VALUES ("${title}", "${description}", "${URL}")`;
             con.query(sql, function (err, result) {
 
-              if (err){
-                  //throw err;
-                  console.log(err);
-              }
-              else{
-                  console.log(`${URL} Inserted in DB table links`);
-                  console.log("arr_keywords: ", arr_keywords)
-                  if(keywords != undefined){
-                  
-                    for(let j=0; j<arr_keywords.length; j++){
+                if (err){
+                    //throw err;
+                    console.log(err);
+                }
+                else{ //Si la insercion en urls es correcta
+                    if(keywords != undefined){
+                          let queryId = `SELECT id FROM urls WHERE URL = "${URL}"`;
+                          con.query(queryId, function (err, result) {
+                              if (err){
+                                console.log(err);
+                              }
+                              else{
+                                  console.log("id: ",result[0].id)
+                                  console.log("id: ",result[0].id/389362,"% ")
 
-                        let sql2 = `INSERT INTO keywords (id_url, keyword) VALUES ("${contador}", "${arr_keywords[j]}")`;
-                        con.query(sql2, function (err, result) {
-                            if (err){
-                              console.log(err);
-                            }
-                            else{
-                                console.log('keyword insertada in table keywords')
-                            }
-                        })
+                                  for(let j=0; j<arr_keywords.length; j++){
 
+                                      let sql2 = `INSERT INTO keywords (id_url, keyword) VALUES ("${result[0].id}", "${arr_keywords[j]}")`;
+                                      con.query(sql2, function (err, result) {
+                                          if (err){
+                                            console.log(err);
+                                          }
+                                          else{
+                                              //console.log('keyword insertada in table keywords')
+                                          }
+                                      })
+          
+                                  }
+                              }
+                          })
                     }
-                    
-                  }
-                  contador++;
-              }
+                }
 
             });
 
