@@ -66,6 +66,8 @@ const searchitems=(req,res)=>{
     let cache = null;
     (async () => {
         let reply = await redis_client.get(busqueda);
+
+            //Si esta en cache, usa redis
             if(reply){
                 cache = JSON.parse(reply);
                 console.log("Busqueda: "+busqueda)
@@ -87,6 +89,7 @@ const searchitems=(req,res)=>{
 
                 res.status(200).json(cache)
             }
+            //Si no esta en cache, usa gRPC
             else{
                 console.log("Busqueda: "+busqueda)
                 console.log("No se ha encontrado en Caché, Buscando en Postgres...")

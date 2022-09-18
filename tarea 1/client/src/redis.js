@@ -14,20 +14,20 @@ class redis_server {
 
         return redisClient;
     }
-
+/*
     setData(data) {
         var redisClient = this.redisConnect();
-        redisClient.set('countries', data);
+        redisClient.set('urls', data);
     }
 
     getData(callBack) {
         var redisClient = this.redisConnect();
-        var resp = redisClient.get('countries');
+        var resp = redisClient.get('urls');
 
         resp.then(function(result) {
             callBack(null, result)
         });
-    }
+    }*/
 }
 
 module.exports = redis_server;
