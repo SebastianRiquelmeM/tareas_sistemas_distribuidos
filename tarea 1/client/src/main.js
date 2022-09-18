@@ -33,7 +33,14 @@ con.connect(function(err) {
 
 const app = express();
 
-app.use(express.json());
+const cors = require("cors");
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            //access-control-allow-credentials:true
+   optionSuccessStatus:200,
+}
+
+app.use(express.json(),cors(corsOptions));
 
 const port = 3000;  
 
@@ -206,91 +213,5 @@ app.post('/keyword', (req, res) => {
 
 });
 
-
-app.get('/grpc', (req, res) => {
-      //load Definition into gRPC
-  const UrlsService = grpc.loadPackageDefinition(pkgDefs).UrlsService;
-  
-  //create the Client
-  const client = new UrlsService(
-    "localhost:5003",
-    grpc.credentials.createInsecure()
-  );
-  
-  //make a call to GetUser
-  client.GetUrls({}, (error, url) => {
-    if (error) {
-      console.log(error);
-      res.send(error)
-    } else {
-      console.log(url);
-      res.send(url)
-    }
-  });
-})
-  
-
-
-
-
-
-
-
-/*
-app.post('/keyword', (req, res) => {
-    //res.send('Hello World, from express');
-    
-
-    //res.send(req.body.keyword)
-
-    let keyword = req.body.keyword
-    
-    let sql = `SELECT * FROM keywords WHERE keyword like '%${keyword}%'`;
-    con.query(sql, function (err, result) {
-
-        if (err){
-            //throw err;
-            //console.log(err);
-            res.send(err);
-        }
-        else{ //Si la query es correcta
-            //res.send(result[0].id_url);
-            //res.send(result.id_url)
-            //res.send(result)
-            
-            const resultados = []
-
-            for( let i=0; i<result.length; i++){
-
-                let id_url = result[i].id_url
-                //console.log(id_url)
-                let sql2 = `SELECT * FROM urls WHERE id = ${id_url}`;
-
-                //console.log(sql2)
-
-                con.query(sql2, function (err, response) {
-
-                    if (err){
-                        //throw err;
-                        //console.log(err);
-                        res.send(err);
-                    }
-                    else{ //Si la query es correcta
-                        resultados.push(response[0])
-                        //console.log(response[0])
-                        //console.log(resultados)
-                        //console.log(response[0].id)
-                        if(i == result.length-1){
-                            //const set_resultados = new set(resultados)
-                            res.send(resultados)
-                            //res.send(set_resultados)
-                        }
-                    }
-                }); 
-            }
-        }
-
-    });
-});*/
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
