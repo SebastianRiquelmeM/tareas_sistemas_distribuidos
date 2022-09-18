@@ -69,7 +69,7 @@ server.addService(userProto.UrlsService.service, {
   //implment GetUser
   GetUrls: (input, callback) => {
     try {
-        var sql = `SELECT * FROM urls LIMIT 1`;
+        var sql = `SELECT * FROM urls LIMIT 10`;
         con.query(sql, function (err, result) {
     
             if (err){
@@ -87,13 +87,18 @@ server.addService(userProto.UrlsService.service, {
                 console.log("title: ",result[0].title)
                 console.log("description: ",result[0].description)
                 console.log("url: ",result[0].URL)*/
+                //for(let i=0; i<10; i++){
+                    //console.log(result[i])
+                //}
 
+                console.log(result)
+                /*
                 let id = result[0].id
                 let title = result[0].title
                 let description = result[0].description
-                let url = result[0].URL
-                
-                callback(null, {Urls: {id, title, description, url }});
+                let url = result[0].URL*/
+                //{id, title, description, url }
+                callback(null, {Urls: result});
             }
         });
         
@@ -222,8 +227,10 @@ app.get('/grpc', (req, res) => {
   client.GetUrls({}, (error, url) => {
     if (error) {
       console.log(error);
+      res.send(error)
     } else {
       console.log(url);
+      res.send(url)
     }
   });
 })

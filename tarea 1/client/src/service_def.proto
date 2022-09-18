@@ -6,7 +6,7 @@ message url {
     int32 id = 1;
     string title = 2;
     string description = 3;
-    string url = 4;
+    string URL = 4;
 }
 
 message urls {
