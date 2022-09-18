@@ -10,8 +10,9 @@ var urls = fs.readFileSync('./linksepicos.txt').toString().split("\n");
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
-    host: "localhost",
+    host: "mariadb",
     user: "root",
+    port: 3306,
     password: "rootpass",
     database: "distribuidos",
     connectTimeout: 99999999,

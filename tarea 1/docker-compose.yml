@@ -1,5 +1,17 @@
 version: '3'
 services:
+
+    #client: # app que contiene un api en expŕess y hace consultas a redis
+    #    container_name: cliente-http
+    #    build: ./client
+    #    ports:
+    #    - "3000:3000"
+    #    depends_on:
+    #        - mariadb
+    #    networks:
+    #        backend:
+    #            ipv4_address: 172.30.3.4
+
     mariadb:
         image: mariadb:10.3.9
         container_name: distribuidos-mariadb
@@ -18,6 +30,25 @@ services:
             backend:
                 ipv4_address: 172.30.3.3
 
+    redis: 
+        container_name: cache
+        image: redis:6.2.6
+        restart: always
+        ports:
+        - "8031:6379"
+        environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+        command:
+         [
+            "redis-server",
+            "--bind",
+            "redis",
+            "--maxmemory 2mb",
+            "--maxmemory-policy allkeys-lru"
+         ]
+        networks:
+            backend:
+                ipv4_address: 172.30.3.4
 
 networks:
     backend:
