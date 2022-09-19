@@ -10,7 +10,7 @@ services:
     #        - mariadb
     #    networks:
     #        backend:
-    #            ipv4_address: 172.30.3.4
+    #            ipv4_address: 172.30.3.2
 
     mariadb:
         image: mariadb:10.3.9
@@ -30,8 +30,8 @@ services:
             backend:
                 ipv4_address: 172.30.3.3
 
-    redis: 
-        container_name: cache
+    redis1: 
+        container_name: redis1
         image: redis:6.2.6
         restart: always
         ports:
@@ -49,6 +49,44 @@ services:
         networks:
             backend:
                 ipv4_address: 172.30.3.4
+    redis2: 
+        container_name: redis2
+        image: redis:6.2.6
+        restart: always
+        ports:
+        - "6380:6379"
+        environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+        command:
+         [
+            "redis-server",
+            "--bind",
+            "redis",
+            "--maxmemory 2mb",
+            "--maxmemory-policy allkeys-lru"
+         ]
+        networks:
+            backend:
+                ipv4_address: 172.30.3.5
+    redis3: 
+        container_name: redis3
+        image: redis:6.2.6
+        restart: always
+        ports:
+        - "6381:6379"
+        environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+        command:
+         [
+            "redis-server",
+            "--bind",
+            "redis",
+            "--maxmemory 2mb",
+            "--maxmemory-policy allkeys-lru"
+         ]
+        networks:
+            backend:
+                ipv4_address: 172.30.3.6
 
 networks:
     backend:

@@ -4,11 +4,46 @@ const mysql = require('mysql');
 
 const redis = require('redis');
 
-const redis_client = redis.createClient();
+//const redis_client = redis.createClient();
 
+// -------CONFIGURACION DE REDIS EN 3 CLIENTES-------
+const redis_client = redis.createClient({
+    url:"redis://redis1"
+});
+
+const redis_client2 = redis.createClient({
+    url:"redis://redis2"
+});
+
+const redis_client3 = redis.createClient({
+    url:"redis://redis3"
+});
+
+// -------VALIDACIÓN DE CONEXIÓN DE REDIS EN 3 CLIENTES-------
+redis_client.on('ready',()=>{
+    console.log("Redis1 listo")
+    console.log("-------------------------------------------------------------------------------------------------------------")
+})
+
+redis_client2.on('ready',()=>{
+    console.log("Redis2 listo")
+    console.log("-------------------------------------------------------------------------------------------------------------")
+})
+
+redis_client3.on('ready',()=>{
+    console.log("Redis3 listo")
+    console.log("-------------------------------------------------------------------------------------------------------------")
+})
+
+// -------CONEXIÓN MICROSERVICIOS CLIENTES DE REDIS-------
+redis_client.connect()
+redis_client2.connect()
+redis_client3.connect()
+
+/*
 redis_client.on("error", function(error) {
   console.error(error);
-});
+});*/
 
 
 const con = mysql.createConnection({

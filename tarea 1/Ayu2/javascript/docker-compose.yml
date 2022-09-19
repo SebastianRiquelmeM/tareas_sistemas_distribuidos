@@ -62,7 +62,7 @@ services:
     image: redis:6.2.6
     restart: always
     ports:
-      - "6380:6379"
+      - "6379:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     command:
@@ -79,7 +79,7 @@ services:
     image: redis:6.2.6
     restart: always
     ports:
-      - "6381:6379"
+      - "6379:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     command:
