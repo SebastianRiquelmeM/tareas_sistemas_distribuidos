@@ -8,23 +8,27 @@ const redis = require('redis');
 
 // -------CONFIGURACION DE REDIS EN 3 CLIENTES-------
 const redis_client = redis.createClient({
-    url:"redis://redis1"
+    //url:"redis://redis1"
+    url:"redis://172.30.3.4"
 });
 
+/*
 const redis_client2 = redis.createClient({
-    url:"redis://redis2"
+    //url:"redis://redis2"
+    url:"redis://172.30.3.5"
 });
 
 const redis_client3 = redis.createClient({
-    url:"redis://redis3"
-});
+    //url:"redis://redis3"
+    url:"redis://172.30.3.6"
+});*/
 
 // -------VALIDACIÓN DE CONEXIÓN DE REDIS EN 3 CLIENTES-------
 redis_client.on('ready',()=>{
     console.log("Redis1 listo")
     console.log("-------------------------------------------------------------------------------------------------------------")
 })
-
+/*
 redis_client2.on('ready',()=>{
     console.log("Redis2 listo")
     console.log("-------------------------------------------------------------------------------------------------------------")
@@ -34,16 +38,17 @@ redis_client3.on('ready',()=>{
     console.log("Redis3 listo")
     console.log("-------------------------------------------------------------------------------------------------------------")
 })
-
+*/
 // -------CONEXIÓN MICROSERVICIOS CLIENTES DE REDIS-------
+/*
 redis_client.connect()
 redis_client2.connect()
-redis_client3.connect()
+redis_client3.connect()*/
 
-/*
-redis_client.on("error", function(error) {
-  console.error(error);
-});*/
+
+console.log('Redis conection: '+redis_client.isOpen);/*
+console.log('Redis conection: '+redis_client2.isOpen);
+console.log('Redis conection: '+redis_client3.isOpen);*/
 
 
 const con = mysql.createConnection({
