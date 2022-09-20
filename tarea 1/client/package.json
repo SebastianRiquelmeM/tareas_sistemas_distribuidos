@@ -11,6 +11,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.6.7",
     "@grpc/proto-loader": "^0.5.3",
+    "axios": "^0.27.2",
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "grpc": "^1.24.2",

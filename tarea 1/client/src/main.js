@@ -181,7 +181,7 @@ app.post('/keyword', (req, res) => {
         //Si esta en cache, usa Redis
         if(response.length){
             console.log("\n\n ESTA EN CACHE \n\n")
-            console.log(response)
+            //console.log(response)
             //console.log(response[0])
             res.send(response[0])
         }
@@ -231,11 +231,91 @@ app.post('/keyword', (req, res) => {
         
                                     
                                     //obtiene los datos recien guardados en redis
+                                    /*
                                     redis_client.smembers(keyword, function(err, names){
                                         console.log(names); //["John", "Jane"]
-                                    });
+                                    });*/
         
                                     res.send(resultados)
+                                    //res.send(set_resultados)
+                                }
+                            }
+                        }); 
+                    }
+                }
+        
+            });
+        }
+        
+    });
+});
+
+app.post('/test', (req, res) => {
+
+    let keyword = req.body.keyword
+
+    //obtiene los datos recien guardados en redis
+    redis_client.smembers(keyword, function(err, response){
+        
+        //Si esta en cache, usa Redis
+        if(response.length){
+            console.log("\n\n ESTA EN CACHE \n\n")
+            //console.log(response)
+            //console.log(response[0])
+            res.send("cache")
+        }
+        //No esta en cache, usa gRPC y va a la base de datos
+        else{
+            console.log("\n\n NO ESTA EN CACHE \n\n")
+            let keyword = req.body.keyword
+        
+            let sql = `SELECT * FROM keywords WHERE keyword like '%${keyword}%'`;
+            con.query(sql, function (err, result) {
+        
+                if (err){
+                    //throw err;
+                    //console.log(err);
+                    res.send(err);
+                }
+                else{ //Si la query es correcta
+                    //res.send(result[0].id_url);
+                    //res.send(result.id_url)
+                    //res.send(result)
+                    
+                    const resultados = []
+        
+                    for( let i=0; i<result.length; i++){
+        
+                        let id_url = result[i].id_url
+                        //console.log(id_url)
+                        let sql2 = `SELECT * FROM urls WHERE id = ${id_url}`;
+        
+                        //console.log(sql2)
+        
+                        con.query(sql2, function (err, response) {
+        
+                            if (err){
+                                //throw err;
+                                //console.log(err);
+                                res.send(err);
+                            }
+                            else{ //Si la query es correcta
+                                resultados.push(response[0])
+
+                                if(i == result.length-1){
+                                    //const set_resultados = new set(resultados)
+        
+                                    //guarda datos en redis
+                                    redis_client.sadd(keyword, JSON.stringify(resultados) )
+        
+                                    
+                                    //obtiene los datos recien guardados en redis
+                                    /*
+                                    redis_client.smembers(keyword, function(err, names){
+                                        console.log(names); //["John", "Jane"]
+                                    });*/
+        
+                                    res.send("nocache")
                                     //res.send(set_resultados)
                                 }
                             }
