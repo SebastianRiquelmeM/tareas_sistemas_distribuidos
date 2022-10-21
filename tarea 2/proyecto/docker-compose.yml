@@ -1,0 +1,53 @@
+version: "3"
+services:
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: 'bitnami/kafka:latest'
+    container_name: kafka
+    #networks:
+    #  - my_network
+    ports:
+      - '9092:9092'
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+
+    depends_on:
+      - zookeeper
+
+  consumer:
+    build:
+      context: ./consumer/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      PORT: 3000
+      kakfaHost: kakfka:9092
+    ports:
+      - 3000:3000
+
+  producer:
+    build:
+      context: ./producer/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      PORT: 6000
+      kakfaHost: kakfka:9092
+    ports:
+      - 6000:6000
+    

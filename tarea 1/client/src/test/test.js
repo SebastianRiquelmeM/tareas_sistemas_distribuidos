@@ -53,6 +53,8 @@ con.query(sql, function (err, result) {
             }
             )
             .then(function (response) {
+
+                /*
                 //console.log(response.data)
                 if(response.data == "cache" || response.data == "no cache"){
                     var sql = `select cache, nocache, tiempo from test_cache`;
@@ -102,7 +104,7 @@ con.query(sql, function (err, result) {
                         }
                 
                     });
-                }
+                }*/
 
             })
             .catch(function (error) {
@@ -120,7 +122,8 @@ con.query(sql, function (err, result) {
                 nocache++
             }*/
        }
-       console.log("Tiempo total: ", tiempoTotal, "ms")
+       console.log("Tiempo total: ", tiempoTotal, "ms ")
+       console.log("Cantidad de consultas: ", result.length)
        //console.log(cache)
     }
 
