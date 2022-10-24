@@ -11,19 +11,20 @@ const kafka = new Kafka({
     brokers: ["kafka:9092"]
 });
 
-const consumidor = async () => {
 
-
+app.get('/', async (req, res) => {
+    console.log("\n\n\n-------Mensaje consumer-------\n\n\n")
     const consumer = kafka.consumer({ groupId: 'test-topic-consumer', fromBeginning: true });
     await consumer.connect();
     await consumer.subscribe({ topic: 'test-topic' });
     await consumer.run({
             eachMessage: async ({ topic, partition, message }) => {
-                let data = JSON.parse(message.value.toString());
+                let data = JSON.parse(message.value);
                 console.log(data)
             }
     })
-}
+});
+
 
 
 app.listen(3000, () => {
