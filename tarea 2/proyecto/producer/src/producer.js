@@ -12,46 +12,24 @@ const kafka = new Kafka({
 
 const producer = kafka.producer();
 
-// Usamos admin para crear topics
-const admin = kafka.admin();
-
 app.get('/', async (req, res) => {
-    console.log("\n\n\n-------Mensaje producer--------\n\n\n")
-
-    // remember to connect and disconnect when you are done
-    //await admin.connect();
-
-    
-/*     await admin.createTopics({
-        validateOnly: false,
-        waitForLeaders: true,
-        timeout: 5000,
-        topics: [{
-            topic: 'test-topic',
-            numPartitions: 2 */ 
-/*         }]
-    }); */  
+    console.log("\n\n\n-------Mensaje producer--------\n\n")
 
     //chantar timeout
-    console.log("Producer conectando...")
+    console.log("Producer conectando...\n")
     await producer.connect()
-    console.log("Producer conectado!")
+    console.log("Producer conectado!\n")    
 
     //AQUI CAGA
     await producer.send({
         topic: "test-topic",
         //value: JSON.stringify(user)
-        messages: [{ value: JSON.stringify(
-
-            {
-                mensaje: "Hola desde JS producer en docker"
-            }
-
-        ) }],
-        
+        messages: [{ value: "Hola desde JS" }]
     })
 
     console.log("Producer send terminado!")
+
+    res.send("Producer send terminado!")
 });
 
 

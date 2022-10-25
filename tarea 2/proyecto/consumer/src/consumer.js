@@ -8,21 +8,38 @@ app.use(express.json());
 
 //Conexion a kafka
 const kafka = new Kafka({
-    brokers: ["kafka:9092"]
+    brokers: ["kafka:9092"] 
 });
 
 
 app.get('/', async (req, res) => {
     console.log("\n\n\n-------Mensaje consumer-------\n\n\n")
-    const consumer = kafka.consumer({ groupId: 'test-topic-consumer', fromBeginning: true });
+
+    console.log("Iniciando objeto consumer...\n")
+    const consumer = kafka.consumer({ groupId: 'test-topic-consumer'/* , fromBeginning: true */ });
+    console.log("Consumer iniciado!\n")
+    console.log("Conectando a consumer...\n")
+    
     await consumer.connect();
-    await consumer.subscribe({ topic: 'test-topic' });
+    console.log("Consumer conectado!\n")
+    console.log("Suscribiendose al topic...\n")
+
+    await consumer.subscribe({ topic: 'test-topic', fromBeginning: true });
+    console.log("Suscrito al topic!\n")
+    console.log("Ejecutando consumer run...\n")
     await consumer.run({
             eachMessage: async ({ topic, partition, message }) => {
-                let data = JSON.parse(message.value);
-                console.log(data)
-            }
-    })
+                //console.log("\n\nTOPIC: ", topic,"\n\n")
+                //console.log("\n\nMESSAGE: ", message,"\n\n")
+                console.log("\n\nMESSAGE:VALUE: ", message.value.toString(),"\n\n")
+                //let data = JSON.parse(message.value)    ;
+                //console.log(data)
+            }   
+    })  
+
+    console.log("Consumer terminado!")
+
+    res.send("Consumer terminado!")
 });
 
 
