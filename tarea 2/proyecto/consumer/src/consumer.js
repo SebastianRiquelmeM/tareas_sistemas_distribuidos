@@ -29,9 +29,9 @@ app.get('/', async (req, res) => {
     console.log("Ejecutando consumer run...\n")
     await consumer.run({
             eachMessage: async ({ topic, partition, message }) => {
-                //console.log("\n\nTOPIC: ", topic,"\n\n")
-                //console.log("\n\nMESSAGE: ", message,"\n\n")
-                console.log("\nMESSAGE:VALUE: ", message.value.toString(),"\n")
+                console.log("\n\nTOPIC: ", topic,"\n\n")
+                console.log("\n\nMESSAGE: ", message,"\n\n")
+                console.log("\nMESSAGE:VALUE: ", JSON.parse(message.value.toString()),"\n")
                 //let data = JSON.parse(message.value)    ;
                 //console.log(data)
             }   
@@ -39,11 +39,11 @@ app.get('/', async (req, res) => {
 
     console.log("Consumer terminado!")
 
-    res.send("Consumer terminado!", message.value.toString())
+    res.send("Consumer terminado!")
 });
 
 
 
-app.listen(3000, () => {
-	console.log("\nServer CONSUMER corriendo en puerto: 3000\n");
+app.listen(3002, () => {
+	console.log("\nServer CONSUMER corriendo en puerto: 3002\n");
 });

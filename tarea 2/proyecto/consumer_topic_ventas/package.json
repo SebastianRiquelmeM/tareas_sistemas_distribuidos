@@ -1,10 +1,10 @@
 {
-    "name": "consumer",
+    "name": "consumer_ventas",
     "version": "1.0.0",
     "description": "",
     "main": "main.js",
     "scripts": {
-      "dev": "nodemon src/consumer.js"
+      "dev": "nodemon src/consumer_ventas.js"
     },
     "author": "",
     "license": "ISC",

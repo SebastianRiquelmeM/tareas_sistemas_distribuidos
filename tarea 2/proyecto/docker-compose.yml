@@ -23,9 +23,23 @@ services:
     depends_on:
       - zookeeper
 
-  api_ejemplo:
+  producer_tarea:
     build:
-      context: ./API_ejemplo/
+      context: ./producer_tarea/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      PORT: 3000
+      kakfaHost: kakfka:9092
+    ports:
+      - 3000:3000
+
+  consumer_nuevos_usuarios:
+    build:
+      context: ./consumer_topic_nuevos_usuarios/
       dockerfile: Dockerfile
     restart: always
     depends_on:
@@ -46,10 +60,11 @@ services:
       - zookeeper
       - kafka
     environment:
-      PORT: 3000
+      PORT: 3002
       kakfaHost: kakfka:9092
     ports:
-      - 3000:3000
+      - 3002:3002
+
 
   producer:
     build:
@@ -60,8 +75,21 @@ services:
       - zookeeper
       - kafka
     environment:
-      PORT: 6000
+      PORT: 3003
       kakfaHost: kakfka:9092
     ports:
-      - 6000:6000
-    
+      - 3003:3003
+
+  consumer_ventas:
+    build:
+      context: ./consumer_topic_ventas/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      PORT: 3004
+      kakfaHost: kakfka:9092
+    ports:
+      - 3004:3004

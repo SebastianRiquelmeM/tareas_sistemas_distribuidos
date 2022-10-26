@@ -33,6 +33,6 @@ app.get('/', async (req, res) => {
 });
 
 
-app.listen(6000, () => {
-	console.log("\nServer PRODUCER corriendo en puerto: 6000\n");
+app.listen(3003, () => {
+	console.log("\nServer PRODUCER corriendo en puerto: 3003\n");
 });

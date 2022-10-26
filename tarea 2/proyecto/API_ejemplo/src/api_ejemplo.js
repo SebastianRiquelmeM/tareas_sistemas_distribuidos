@@ -11,11 +11,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/formulario', (req, res) => {
-    console.log("API funcionando")
-
     console.log("API recibió: ",req.body.nombre)
     res.status(200).json({ success: true });
-    //res.send("API recibió: ", req.body)
 });
 
 
