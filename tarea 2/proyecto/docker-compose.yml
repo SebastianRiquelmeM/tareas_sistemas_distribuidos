@@ -23,6 +23,20 @@ services:
     depends_on:
       - zookeeper
 
+  api_ejemplo:
+    build:
+      context: ./API_ejemplo/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      PORT: 3001
+      kakfaHost: kakfka:9092
+    ports:
+      - 3001:3001
+
   consumer:
     build:
       context: ./consumer/

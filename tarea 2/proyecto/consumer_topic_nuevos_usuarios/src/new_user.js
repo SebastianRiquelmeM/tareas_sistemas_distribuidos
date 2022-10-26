@@ -12,6 +12,7 @@ const kafka = new Kafka({
 });
 
 
+
 app.get('/', async (req, res) => {
     console.log("\n\n\n-------Mensaje consumer-------\n\n\n")
 

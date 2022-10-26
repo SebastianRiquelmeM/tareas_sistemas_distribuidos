@@ -1,0 +1,21 @@
+{
+    "name": "consumer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+      "dev": "nodemon src/stock.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.3",
+      "mysql": "^2.18.1",
+      "kafkajs": "^2.2.2",
+      "npm": "^8.7.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.15"
+    }
+  }
