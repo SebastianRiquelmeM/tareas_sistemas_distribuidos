@@ -36,7 +36,7 @@ app.get('/consumer_registro_miembro', async (req, res) => {
 
 
                 let data = JSON.parse(message.value.toString());
-                console.log("\nMESSAGE:VALUE: ", data.Cliente,"\n")
+                console.log("\n\nMESSAGE:VALUE: ", data,"\n\n")
 
                 //let data = JSON.parse(message.value)    ;
                 //console.log(data)

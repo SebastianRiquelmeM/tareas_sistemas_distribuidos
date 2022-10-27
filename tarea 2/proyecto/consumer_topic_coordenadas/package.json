@@ -1,10 +1,10 @@
 {
-    "name": "consumer",
+    "name": "coordenadas_carrito",
     "version": "1.0.0",
     "description": "",
     "main": "main.js",
     "scripts": {
-      "dev": "nodemon src/pos_carrito.js"
+      "dev": "nodemon src/coordenadas_carrito.js"
     },
     "author": "",
     "license": "ISC",

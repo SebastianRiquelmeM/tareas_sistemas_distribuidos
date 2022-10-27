@@ -33,8 +33,8 @@ app.get('/', async (req, res) => {
                 //console.log("\n\nMESSAGE: ", message,"\n\n")
                 console.log("\n Ahora imprimo el mensaje: \n")
                 console.log("\nMESSAGE.VALUE: ", JSON.parse(message.value.toString()),"\n")
-                //let data = JSON.parse(message.value)    ;
-                //console.log(data)
+                
+                //GUARDAR EN UNA DB LA VENTA
             }   
     })  
 
