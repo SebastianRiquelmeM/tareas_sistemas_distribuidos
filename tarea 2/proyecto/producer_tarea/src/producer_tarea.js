@@ -82,18 +82,21 @@ app.post('/registro_venta', async (req, res) => {
     const CantSopaipillas=req.body.CantSopaipillas
     const Hora=req.body.Hora
     const Stock=req.body.Stock
-    const Ubicacion=req.body.Ubicacion
+    //const Ubicacion=req.body.Ubicacion
+
+
+   //CONSULTAR UBICACION A CtuAL A LA DB
+
+    const ubi = [50,50]
 
     const venta = {
         Cliente: Cliente,
         CantSopaipillas: CantSopaipillas,
         Hora: Hora,
-        Stock: Stock
+        Stock: Stock,
+        Ubicacion: ubi
     }
 
-    const Ubi = {
-        Ubiacion: Ubicacion
-    }
 
     console.log("\nreq.body: \n",req.body)
 
@@ -109,36 +112,25 @@ app.post('/registro_venta', async (req, res) => {
         messages: [{ value: JSON.stringify(req.body)}]
     })
 
-    //Manda al topic Coordenadas
-
-    console.log("Producer conectando...\n")
-    await producer.connect()
-    console.log("Producer conectado!\n")    
-
-    await producer.send({
-        topic: "coordenadas",
-        //value: JSON.stringify(user)
-        messages: [{ value: JSON.stringify(req.body) }]
-    })
-
+    
     res.send("Producer send terminado!")
 });
 
 
 app.post('/ubicacion', async (req, res) => {
-    console.log("\n\n\n-------Mensaje producer agente extranio-------\n\n")
-
-    const Ubicacion=req.body.Ubicacion
+    console.log("\n\n\n-------Mensaje producer ubicacion-------\n\n")
     console.log("\nreq.body: \n",req.body)
+    const Ubicacion=req.body.Ubicacion
+    
 
-    console.log("Producer conectando...\n")
+    //console.log("Producer conectando...\n")
     await producer.connect()
-    console.log("Producer conectado!\n")    
+    //console.log("Producer conectado!\n")    
 
     await producer.send({
         topic: "coordenadas",
         //value: JSON.stringify(user)
-        messages: [{ value: JSON.stringify(req.body), partition: 1}]
+        messages: [{ value: JSON.stringify(req.body), partition: 0}]
     })
 
     res.send("Producer send terminado!")

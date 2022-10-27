@@ -30,10 +30,11 @@ app.get('/', async (req, res) => {
     await consumer.run({
             eachMessage: async ({ topic, partition, message }) => {
                 console.log("\n\nTOPIC: ", topic,"\n\n")
-                console.log("\n\nMESSAGE: ", message,"\n\n")
+                //console.log("\n\nMESSAGE: ", message,"\n\n")
                 console.log("\nMESSAGE:VALUE: ", JSON.parse(message.value.toString()),"\n")
                 //let data = JSON.parse(message.value)    ;
                 //console.log(data)
+                
             }   
     })  
 
