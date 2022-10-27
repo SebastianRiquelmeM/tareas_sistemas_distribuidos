@@ -12,27 +12,6 @@ const kafka = new Kafka({
 
 const producer = kafka.producer();
 
-app.get('/', async (req, res) => {
-    console.log("\n\n\n-------Mensaje producer--------\n\n")
-
-    
-    console.log("Producer conectando...\n")
-    await producer.connect()
-    console.log("Producer conectado!\n")    
-
-    
-
-    await producer.send({
-        topic: "test-topic",
-        //value: JSON.stringify(user)
-        messages: [{ value: "Hola desde JS" }]
-    })
-
-    console.log("Producer send terminado!")
-
-    res.send("Producer send terminado!")
-});
-
 //Registro
 app.post('/registro_miembro', async (req, res) => {
     console.log("\n\n\n-------Mensaje producer registro miembro--------\n\n")
@@ -85,7 +64,7 @@ app.post('/registro_venta', async (req, res) => {
     //const Ubicacion=req.body.Ubicacion
 
 
-   //CONSULTAR UBICACION A CtuAL A LA DB
+   //CONSULTAR UBICACION ACTUAL A LA DB
 
     const ubi = [50,50]
 
