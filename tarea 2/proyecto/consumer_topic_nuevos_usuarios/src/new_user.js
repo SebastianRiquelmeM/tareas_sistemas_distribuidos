@@ -1,5 +1,6 @@
 const express = require('express');
 const { Kafka } = require('kafkajs');
+const mysql = require('mysql');
 //const cors = require('cors');
 const app = express();
 
@@ -11,7 +12,35 @@ const kafka = new Kafka({
     brokers: ["kafka:9092"] 
 });
 
+const con = mysql.createConnection({
+    //host: "172.30.3.3",
+    host: "127.0.0.1",
+    // PONER PUERTO(?)
+    user: "root",
+    password: "rootpass",
+    database: "distribuidos",
+    connectTimeout: 99999999,
+    acquireTimeout: 99999999,
+    waitForConnections: true,
+    queueLimit: 0
+  });
 
+//Trozo de codigo para realizar una query, /esta se mete a la funcion pa realizar la query
+try {
+    let sql = `SELECT * FROM urls LIMIT 10`;
+    con.query(sql, function (err, result) {
+
+        if (err){
+            console.log(err);
+        }
+        else{ //Si la query es correcta
+            console.log(result)
+            callback(null, {Urls: result});
+        }
+    });
+} catch (error) {
+  callback(error, null);
+}
 
 app.get('/consumer_registro_miembro', async (req, res) => {
     console.log("\n\n\n-------Mensaje consumer-------\n\n\n")
@@ -34,6 +63,9 @@ app.get('/consumer_registro_miembro', async (req, res) => {
                 console.log("\n\npartition: ", partition,"\n\n")
                 console.log("Voy a imprimir los datos: \n")
 
+                //if particion corresponde a la de premium y se mete a la db
+
+                
 
                 let data = JSON.parse(message.value.toString());
                 console.log("\n\nMESSAGE:VALUE: ", data,"\n\n")

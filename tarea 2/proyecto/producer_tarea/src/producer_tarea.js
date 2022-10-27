@@ -57,6 +57,7 @@ app.post('/registro_miembro', async (req, res) => {
 // Registro de Venta...
 app.post('/registro_venta', async (req, res) => {
     console.log("\n\n\n-------Mensaje producer venta--------\n\n")
+    const Patente=req.body.Patente
     const Cliente=req.body.Cliente
     const CantSopaipillas=req.body.CantSopaipillas
     const Hora=req.body.Hora
@@ -69,6 +70,7 @@ app.post('/registro_venta', async (req, res) => {
     const ubi = [50,50]
 
     const venta = {
+        Patente: Patente,
         Cliente: Cliente,
         CantSopaipillas: CantSopaipillas,
         Hora: Hora,
