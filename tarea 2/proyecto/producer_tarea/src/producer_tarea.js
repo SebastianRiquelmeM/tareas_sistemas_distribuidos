@@ -2,6 +2,7 @@ const express = require('express');
 const { Kafka } = require('kafkajs');
 //const cors = require('cors');
 const app = express();
+const mysql = require('mysql');
 
 //app.use(cors());
 app.use(express.json());
@@ -11,6 +12,19 @@ const kafka = new Kafka({
 });
 
 const producer = kafka.producer();
+
+const con = mysql.createConnection({
+    //host: "172.30.3.3",
+    host: "distribuidos-mariadb",
+    // PONER PUERTO(?)
+    user: "root",
+    password: "rootpass",
+    database: "distribuidos",
+    connectTimeout: 99999999,
+    acquireTimeout: 99999999,
+    waitForConnections: true,
+    queueLimit: 0
+  });
 
 //Registro
 app.post('/registro_miembro', async (req, res) => {
@@ -67,31 +81,58 @@ app.post('/registro_venta', async (req, res) => {
 
    //CONSULTAR UBICACION ACTUAL A LA DB
 
-    const ubi = [50,50]
+    
+    // juegue 
+    try {
+        
+        let sql = `SELECT * FROM coordenadas where id_patente="${Patente}" ORDER BY id DESC LIMIT 1`;
+        
+        con.query(sql, async function (err, result) {
+    
+            if (err){
+                console.log(err);
+            }
+            else{ //Si la query es correcta
+                 console.log("la coordenada x es: " ,result[0].coordenada_x)
+                 let coo_x=result[0].coordenada_x
+                 let coo_y=result[0].coordenada_y
+                 const ubi = [coo_x,coo_y]
 
-    const venta = {
-        Patente: Patente,
-        Cliente: Cliente,
-        CantSopaipillas: CantSopaipillas,
-        Hora: Hora,
-        Stock: Stock,
-        Ubicacion: ubi
+
+                 const venta = {
+                    Patente: Patente,
+                    Cliente: Cliente,
+                    CantSopaipillas: CantSopaipillas,
+                    Hora: Hora,
+                    Stock: Stock,
+                    Ubicacion: ubi,
+
+                } 
+                console.log("\nreq.body: \n",req.body)
+
+
+                //Manda al topic registro-venta
+                console.log("Producer conectando...\n")
+                await producer.connect()
+                console.log("Producer conectado!\n")    
+
+                await producer.send({
+                    topic: "registro-venta",
+                    //value: JSON.stringify(user)
+                    messages: [{ value: JSON.stringify(req.body)}]
+                }) 
+            
+                console.log(result)
+            }
+        });
+    } catch (error) {
+        console.log(error)
+      
     }
 
+    
 
-    console.log("\nreq.body: \n",req.body)
-
-
-    //Manda al topic registro-venta
-    console.log("Producer conectando...\n")
-    await producer.connect()
-    console.log("Producer conectado!\n")    
-
-    await producer.send({
-        topic: "registro-venta",
-        //value: JSON.stringify(user)
-        messages: [{ value: JSON.stringify(req.body)}]
-    })
+    
 
     
     res.send("Producer send terminado!")

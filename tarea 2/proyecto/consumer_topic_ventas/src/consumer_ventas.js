@@ -35,6 +35,25 @@ app.get('/', async (req, res) => {
                 console.log("\nMESSAGE.VALUE: ", JSON.parse(message.value.toString()),"\n")
                 
                 //GUARDAR EN UNA DB LA VENTA
+                let data = JSON.parse(message.value.toString());
+                try {
+                    let sql = `INSERT INTO ventas (id_patente,cliente,cantidad_sopaipillas,hora,stock_restante,coordenada_x,coordenada_y) VALUES ("${data.Patente}","${data.Cliente}","${data.CantSopaipillas}","${data.Hora}","${data.Stock}","${coordenada_x}","${coordenada_y}") `;
+                    
+                    
+                    con.query(sql, function (err, result) {
+                
+                        if (err){
+                            console.log(err);
+                        }
+                        else{ //Si la query es correcta
+                            
+                            console.log(result)
+                            callback(null, {Urls: result});
+                        }
+                    });
+                } catch (error) {
+                  callback(error, null);
+                }
             }   
     })  
 
