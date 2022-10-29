@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Empty {}
+
+message url {
+    int32 id = 1;
+    string title = 2;
+    string description = 3;
+    string URL = 4;
+}
+
+message urls {
+    repeated url Urls = 1;
+}
+
+service UrlsService {
+    rpc GetUrls (Empty) returns (urls) {}
+}
