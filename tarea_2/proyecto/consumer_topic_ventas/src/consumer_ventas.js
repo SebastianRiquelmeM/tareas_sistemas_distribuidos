@@ -1,6 +1,26 @@
 const express = require("express");
 const { Kafka } = require("kafkajs");
 //const cors = require('cors');
+
+const mysql = require("mysql");
+
+const con = mysql.createConnection({
+	host: "mariadb",
+	user: "root",
+	port: 3306,
+	password: "rootpass",
+	database: "distribuidos",
+	connectTimeout: 99999999,
+	acquireTimeout: 99999999,
+	waitForConnections: true,
+	queueLimit: 0,
+});
+
+con.connect(function (err) {
+	if (err) throw err;
+	console.log("Connected to DB!");
+});
+
 const app = express();
 
 //app.use(cors());
@@ -31,52 +51,11 @@ const real_time_consumer = async () => {
 	console.log("Suscrito al topic!\n");
 	console.log("Ejecutando consumer run...\n");
 
-	//Tal vez desde aca se necesita el loop
-
-	/* 	let timer = setInterval(async () => {
-		await consumer.run({
-			eachMessage: async ({ topic, partition, message }) => {
-				//console.log("\n\nTOPIC: ", topic,"\n\n")
-				//console.log("\n\nMESSAGE: ", message,"\n\n")
-				console.log("\n Ahora imprimo el mensaje: \n");
-				console.log(
-					"\nMESSAGE.VALUE: ",
-					JSON.parse(message.value.toString()),
-					"\n"
-				);
-
-				//GUARDAR EN UNA DB LA VENTA
-				let data = JSON.parse(message.value.toString());
-				try {
-					let sql = `INSERT INTO ventas 
-								(id_patente,cliente,cantidad_sopaipillas,hora,stock_restante,coordenada_x,coordenada_y) 
-								VALUES ("${data.Patente}","${data.Cliente}",
-								"${data.CantSopaipillas}","${data.Hora}","${data.Stock}","${data.coordenada_x}","${data.coordenada_y}") `;
-
-					con.query(sql, function (err, result) {
-						if (err) {
-							console.log(err);
-						} else {
-							//Si la query es correcta
-
-							console.log(result);
-							callback(null, { Urls: result });
-						}
-					});
-				} catch (error) {
-					callback(error, null);
-				}
-			},
-		});
-	}, 1000); */
-
-	//let timer = setInterval(async () => {}, 1000);
-
 	await consumer.run({
 		eachMessage: async ({ topic, partition, message }) => {
 			//console.log("\n\nTOPIC: ", topic,"\n\n")
 			//console.log("\n\nMESSAGE: ", message,"\n\n")
-			console.log("\n Ahora imprimo el mensaje: \n", message);
+			console.log("\n Ahora imprimo el mensaje: \n");
 			console.log(
 				"\nMESSAGE.VALUE: ",
 				JSON.parse(message.value.toString()),
@@ -85,25 +64,24 @@ const real_time_consumer = async () => {
 
 			//GUARDAR EN UNA DB LA VENTA
 			let data = JSON.parse(message.value.toString());
-			/* 			try {
+			try {
 				let sql = `INSERT INTO ventas 
-								(id_patente,cliente,cantidad_sopaipillas,hora,stock_restante,coordenada_x,coordenada_y) 
-								VALUES ("${data.Patente}","${data.Cliente}",
-								"${data.CantSopaipillas}","${data.Hora}","${data.Stock}","${data.coordenada_x}","${data.coordenada_y}") `;
+							(id_patente,cliente,cantidad_sopaipillas,hora,stock_restante,coordenada_x,coordenada_y) 
+							VALUES ("${data.Patente}","${data.Cliente}",
+							"${data.CantSopaipillas}","${data.Hora}","${data.Stock}","${data.coordenada_x}","${data.coordenada_y}") `;
 
 				con.query(sql, function (err, result) {
 					if (err) {
-						console.log(err);
+						console.log("ERROR MYSQL: ", err);
 					} else {
 						//Si la query es correcta
 
-						console.log(result);
-						callback(null, { Urls: result });
+						console.log("QUERY CORRECTA MYSQL: ", result);
 					}
 				});
 			} catch (error) {
-				callback(error, null);
-			} */
+				console.log("ERROR: ", error);
+			}
 		},
 	});
 
