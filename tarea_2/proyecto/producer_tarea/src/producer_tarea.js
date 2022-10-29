@@ -86,6 +86,24 @@ app.post("/registro_venta", async (req, res) => {
 			if (err) {
 				console.log(err);
 			} else {
+				try {
+					let sql = `SELECT * FROM coordenadas where id_patente="${Patente}" ORDER BY id DESC LIMIT 1`;
+
+					con.query(sql, async function (err, result) {
+						if (err) {
+							console.log(err);
+						} else {
+							//Si la query es correcta
+							console.log(
+								"la coordenada x es: ",
+								result[0].coordenada_x
+							);
+						}
+					});
+				} catch (error) {
+					console.log(error);
+				}
+
 				//Si la query es correcta
 				console.log("la coordenada x es: ", result[0].coordenada_x);
 				let coo_x = result[0].coordenada_x;
