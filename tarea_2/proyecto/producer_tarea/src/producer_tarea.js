@@ -1,3 +1,4 @@
+const e = require("express");
 const express = require("express");
 const { Kafka } = require("kafkajs");
 //const cors = require('cors');
@@ -90,81 +91,90 @@ app.post("/registro_venta", async (req, res) => {
 				console.log(err);
 			} else {
 				try {
-					let sql = ``;
-
+					let sql = `SELECT stock_restante FROM ventas WHERE id_patente="${Patente}"  ORDER BY id DESC LIMIT 1`;
+					let coo_x = result[0].coordenada_x
+					let coo_y = result[0].coordenada_y
 					con.query(sql, async function (err, result) {
 						if (err) {
 							console.log(err);
 						} else {
 							//Si la query es correcta
-							console.log(
-								"el stock  es: ", result[0].Stock
-							);
-							let Stock1 = result[0].Stock;
-							if(Stock1 < 20 ){
-
+							let Stock_restante = 200
+							
+							if(result.length != 0){
+								console.log(
+									"el stock restante   es: ", result[0].stock_restante
+								);
+								Stock_restante = result[0].stock_restante;
+								let Resta = Stock_restante - CantSopaipillas;
+								if(Resta < 20 ){
+									Stock_restante = 200;
+								}
+								else{
+									Stock_restante = Resta;
+								}
 							}
 
-						}
-					});
-				} catch (error) {
-					console.log(error);
-				}
+								//Si la query es correcta
+							
+							//const ubi = [coo_x, coo_y];
 
-				//Si la query es correcta
-				console.log("la coordenada x es: ", result[0].coordenada_x);
-				let coo_x = result[0].coordenada_x;
-				let coo_y = result[0].coordenada_y;
-				//const ubi = [coo_x, coo_y];
+							let date_ob = new Date();
+							let day = ("0" + date_ob.getDate()).slice(-2);
+							let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+							let year = date_ob.getFullYear();
 
-				let date_ob = new Date();
-				let day = ("0" + date_ob.getDate()).slice(-2);
-				let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
-				let year = date_ob.getFullYear();
+							let hours = date_ob.getHours();
+							let minutes = date_ob.getMinutes();
+							let seconds = date_ob.getSeconds();
 
-				let hours = date_ob.getHours();
-				let minutes = date_ob.getMinutes();
-				let seconds = date_ob.getSeconds();
+							let dateTime =
+								year +
+								"-" +
+								month +
+								"-" +
+								day +
+								" " +
+								hours +
+								":" +
+								minutes +
+								":" +
+								seconds;
+							console.log(dateTime);
 
-				let dateTime =
-					year +
-					"-" +
-					month +
-					"-" +
-					day +
-					" " +
-					hours +
-					":" +
-					minutes +
-					":" +
-					seconds;
-				console.log(dateTime);
+							const venta = {
+								Patente: Patente,
+								Cliente: Cliente,
+								CantSopaipillas: CantSopaipillas,
+								Hora: dateTime,
+								Stock: Stock_restante,
+								coordenada_x: coo_x,
+								coordenada_y: coo_y,
+							};
+							console.log("\nreq.body: \n", req.body);
 
-				const venta = {
-					Patente: Patente,
-					Cliente: Cliente,
-					CantSopaipillas: CantSopaipillas,
-					Hora: dateTime,
-					Stock: Stock,
-					coordenada_x: coo_x,
-					coordenada_y: coo_y,
-				};
-				console.log("\nreq.body: \n", req.body);
+							console.log("\nventa: \n", venta);
 
-				console.log("\nventa: \n", venta);
+							//Manda al topic registro-venta
+							console.log("Producer conectando...\n");
+							await producer.connect();
+							console.log("Producer conectado!\n");
 
-				//Manda al topic registro-venta
-				console.log("Producer conectando...\n");
-				await producer.connect();
-				console.log("Producer conectado!\n");
+							await producer.send({
+								topic: "registro-venta",
+								//value: JSON.stringify(user)
+								messages: [{ value: JSON.stringify(venta) }],
+							});
 
-				await producer.send({
-					topic: "registro-venta",
-					//value: JSON.stringify(user)
-					messages: [{ value: JSON.stringify(venta) }],
-				});
+							console.log(result);
 
-				console.log(result);
+									}
+								});
+							} catch (error) {
+								console.log(error);
+							}
+
+				
 			}
 		});
 	} catch (error) {
