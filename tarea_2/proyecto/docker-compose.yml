@@ -1,108 +1,108 @@
 version: "3"
 services:
-  zookeeper:
-    image: "bitnami/zookeeper:latest"
-    ports:
-      - "2181:2181"
-    environment:
-      - ALLOW_ANONYMOUS_LOGIN=yes
-  kafka:
-    image: "bitnami/kafka:latest"
-    container_name: kafka
-    #networks:
-    #  - my_network
-    ports:
-      - "9092:9092"
-    environment:
-      - KAFKA_BROKER_ID=1
-      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
-      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
-      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
-      - ALLOW_PLAINTEXT_LISTENER=yes
-      - KAFKA_CFG_NUM_PARTITIONS=2
-    depends_on:
-      - zookeeper
+    zookeeper:
+        image: "bitnami/zookeeper:latest"
+        ports:
+            - "2181:2181"
+        environment:
+            - ALLOW_ANONYMOUS_LOGIN=yes
+    kafka:
+        image: "bitnami/kafka:latest"
+        container_name: kafka
+        #networks:
+        #  - my_network
+        ports:
+            - "9092:9092"
+        environment:
+            - KAFKA_BROKER_ID=1
+            - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+            - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+            - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+            - ALLOW_PLAINTEXT_LISTENER=yes
+            - KAFKA_CFG_NUM_PARTITIONS=2
+        depends_on:
+            - zookeeper
 
-  mariadb:
-    image: mariadb:10.3.9
-    container_name: distribuidos-mariadb
-    restart: "on-failure"
-    ports:
-      - "3306:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
-      - MYSQL_DATABASE=${DATABASE_NAME}
-    volumes:
-      - ${PWD}
-      - ./database:/docker-entrypoint-initdb.d #Carga los datos de .sql existentes en el archivo .sql que esta en database
-      - ./docker/mysql-data:/var/lib/mysql #Mantiene datos fuera del contenedor, para que no se pierdan.
+    mariadb:
+        image: mariadb:10.3.9
+        container_name: distribuidos-mariadb
+        restart: "on-failure"
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+            - MYSQL_DATABASE=${DATABASE_NAME}
+        volumes:
+            - ${PWD}
+            - ./database:/docker-entrypoint-initdb.d #Carga los datos de .sql existentes en el archivo .sql que esta en database
+            - ./docker/mysql-data:/var/lib/mysql #Mantiene datos fuera del contenedor, para que no se pierdan.
 
-  producer_tarea:
-    build:
-      context: ./producer_tarea/
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - zookeeper
-      - kafka
-    environment:
-      PORT: 3000
-      kakfaHost: kakfka:9092
-    ports:
-      - 3000:3000
+    producer_tarea:
+        build:
+            context: ./producer_tarea/
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3000
+            kakfaHost: kakfka:9092
+        ports:
+            - 3000:3000
 
-  consumer_nuevos_usuarios:
-    build:
-      context: ./consumer_topic_nuevos_usuarios/
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - zookeeper
-      - kafka
-    environment:
-      PORT: 3001
-      kakfaHost: kakfka:9092
-    ports:
-      - 3001:3001
+    consumer_nuevos_usuarios:
+        build:
+            context: ./consumer_topic_nuevos_usuarios/
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3001
+            kakfaHost: kakfka:9092
+        ports:
+            - 3001:3001
 
-  consumer_ventas:
-    build:
-      context: ./consumer_topic_ventas/
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - zookeeper
-      - kafka
-    environment:
-      PORT: 3004
-      kakfaHost: kakfka:9092
-    ports:
-      - 3004:3004
+    consumer_ventas:
+        build:
+            context: ./consumer_topic_ventas/
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3004
+            kakfaHost: kakfka:9092
+        ports:
+            - 3004:3004
 
-  consumer_coordenadas:
-    build:
-      context: ./consumer_topic_coordenadas/
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - zookeeper
-      - kafka
-    environment:
-      PORT: 3005
-      kakfaHost: kakfka:9092
-    ports:
-      - 3005:3005
+    consumer_coordenadas:
+        build:
+            context: ./consumer_topic_coordenadas/
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3005
+            kakfaHost: kakfka:9092
+        ports:
+            - 3005:3005
 
-  consumer_stock:
-    build:
-      context: ./consumer_topic_stock/
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - zookeeper
-      - kafka
-    environment:
-      PORT: 3006
-      kakfaHost: kakfka:9092
-    ports:
-      - 3006:3006
+    consumer_stock:
+        build:
+            context: ./consumer_topic_stock/
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3006
+            kakfaHost: kakfka:9092
+        ports:
+            - 3006:3006
