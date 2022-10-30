@@ -79,7 +79,6 @@ app.post("/registro_venta", async (req, res) => {
 
 	// bastyrex
 
-
 	//CONSULTAR UBICACION ACTUAL A LA DB
 
 	// juegue
@@ -92,36 +91,38 @@ app.post("/registro_venta", async (req, res) => {
 			} else {
 				try {
 					let sql = `SELECT stock_restante FROM ventas WHERE id_patente="${Patente}"  ORDER BY id DESC LIMIT 1`;
-					let coo_x = result[0].coordenada_x
-					let coo_y = result[0].coordenada_y
+					let coo_x = result[0].coordenada_x;
+					let coo_y = result[0].coordenada_y;
 					con.query(sql, async function (err, result) {
 						if (err) {
 							console.log(err);
 						} else {
 							//Si la query es correcta
-							let Stock_restante = 200
-							
-							if(result.length != 0){
+							let Stock_restante = 200;
+
+							if (result.length != 0) {
 								console.log(
-									"el stock restante   es: ", result[0].stock_restante
+									"el stock restante   es: ",
+									result[0].stock_restante
 								);
 								Stock_restante = result[0].stock_restante;
 								let Resta = Stock_restante - CantSopaipillas;
-								if(Resta < 20 ){
+								if (Resta < 20) {
 									Stock_restante = 200;
-								}
-								else{
+								} else {
 									Stock_restante = Resta;
 								}
 							}
 
-								//Si la query es correcta
-							
+							//Si la query es correcta
+
 							//const ubi = [coo_x, coo_y];
 
 							let date_ob = new Date();
 							let day = ("0" + date_ob.getDate()).slice(-2);
-							let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+							let month = ("0" + (date_ob.getMonth() + 1)).slice(
+								-2
+							);
 							let year = date_ob.getFullYear();
 
 							let hours = date_ob.getHours();
@@ -167,14 +168,11 @@ app.post("/registro_venta", async (req, res) => {
 							});
 
 							console.log(result);
-
-									}
-								});
-							} catch (error) {
-								console.log(error);
-							}
-
-				
+						}
+					});
+				} catch (error) {
+					console.log(error);
+				}
 			}
 		});
 	} catch (error) {
@@ -218,6 +216,8 @@ app.post("/agente_extranio", async (req, res) => {
 		//value: JSON.stringify(user)
 		messages: [{ value: JSON.stringify(req.body), partition: 1 }],
 	});
+
+	
 
 	res.send("Producer send terminado!");
 });

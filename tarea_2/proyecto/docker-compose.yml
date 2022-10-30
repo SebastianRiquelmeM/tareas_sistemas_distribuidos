@@ -106,3 +106,19 @@ services:
             kakfaHost: kakfka:9092
         ports:
             - 3006:3006
+
+    generar_coordenadas:
+        build:
+            context: ./scripts_extra/generar_coordenadas
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+            - producer_tarea
+            - consumer_coordenadas
+        environment:
+            PORT: 3007
+            kakfaHost: kakfka:9092
+        ports:
+            - 3007:3007
