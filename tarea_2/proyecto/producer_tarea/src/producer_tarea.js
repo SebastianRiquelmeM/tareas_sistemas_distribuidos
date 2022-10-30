@@ -76,6 +76,9 @@ app.post("/registro_venta", async (req, res) => {
 	const Stock = req.body.Stock;
 	//const Ubicacion=req.body.Ubicacion
 
+	// bastyrex
+
+
 	//CONSULTAR UBICACION ACTUAL A LA DB
 
 	// juegue
@@ -87,7 +90,7 @@ app.post("/registro_venta", async (req, res) => {
 				console.log(err);
 			} else {
 				try {
-					let sql = `SELECT * FROM coordenadas where id_patente="${Patente}" ORDER BY id DESC LIMIT 1`;
+					let sql = ``;
 
 					con.query(sql, async function (err, result) {
 						if (err) {
@@ -95,9 +98,13 @@ app.post("/registro_venta", async (req, res) => {
 						} else {
 							//Si la query es correcta
 							console.log(
-								"la coordenada x es: ",
-								result[0].coordenada_x
+								"el stock  es: ", result[0].Stock
 							);
+							let Stock1 = result[0].Stock;
+							if(Stock1 < 20 ){
+
+							}
+
 						}
 					});
 				} catch (error) {
