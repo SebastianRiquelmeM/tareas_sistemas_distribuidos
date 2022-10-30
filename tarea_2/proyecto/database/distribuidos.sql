@@ -82,12 +82,12 @@ CREATE TABLE `ventas` (
   `id_patente` int(11) NOT NULL,
   `cliente` varchar(255) NOT NULL,
   `cantidad_sopaipillas` int(11) NOT NULL,
-  `hora` varchar(255) NOT NULL,
+  `hora` datetime NOT NULL,
   `stock_restante` int(11) NOT NULL,
   `coordenada_x` int(11) NOT NULL,
   `coordenada_y` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `ventas` (
 
 LOCK TABLES `ventas` WRITE;
 /*!40000 ALTER TABLE `ventas` DISABLE KEYS */;
-INSERT INTO `ventas` VALUES (1,1,'Juanito',11,'18:37',989,19,20),(2,2,'Keznit',9,'17:40',991,19,19);
+INSERT INTO `ventas` VALUES (8,2,'Bastiwello4',20,'2022-10-29 23:26:29',860,19,19),(9,2,'Bastiwello4',20,'2022-10-29 23:26:44',860,19,19),(10,2,'Keznit',20,'2022-10-29 23:27:04',860,19,19),(11,1,'Frez',90,'2022-10-29 23:27:38',860,19,20),(12,1,'Boetcher',200,'2022-10-29 23:28:02',860,19,20),(13,1,'Seba',1,'2022-10-29 23:28:13',860,19,20),(14,1,'Juanito',1,'2022-10-29 23:30:50',860,19,20),(15,1,'Juanito',1,'2022-10-29 23:31:02',860,19,20),(16,1,'Juanito',1,'2022-10-29 23:31:09',860,19,20),(17,1,'Juanito',1,'2022-10-29 23:31:12',860,19,20),(18,1,'Juanito',1,'2022-10-29 23:31:12',860,19,20),(19,1,'Juanito',1,'2022-10-29 23:31:13',860,19,20),(20,1,'Juanito',1,'2022-10-29 23:31:14',860,19,20),(21,1,'Juanito',1,'2022-10-29 23:31:16',860,19,20),(22,1,'Juanito',1,'2022-10-29 23:31:17',860,19,20),(23,1,'Juanito',1,'2022-10-29 23:31:18',860,19,20);
 /*!40000 ALTER TABLE `ventas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -109,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-28 20:15:34
+-- Dump completed on 2022-10-29 21:04:21
