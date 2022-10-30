@@ -14,7 +14,9 @@ const kafka = new Kafka({
 // Este script debe leer constantemente el ventas e ir sumando a una cola,
 // para luego dar una notificacion
 
-app.get("/", async (req, res) => {
+
+const real_time_stock = async () => {
+
 	console.log("\n\n\n-------Mensaje consumer-------\n\n\n");
 
 	console.log("Iniciando objeto consumer...\n");
@@ -28,23 +30,38 @@ app.get("/", async (req, res) => {
 	console.log("Consumer conectado!\n");
 	console.log("Suscribiendose al topic...\n");
 
-	await consumer.subscribe({ topic: "test-topic", fromBeginning: true });
+	await consumer.subscribe({ topic: "registro-venta"});
 	console.log("Suscrito al topic!\n");
 	console.log("Ejecutando consumer run...\n");
+
+	var cola = []
 	await consumer.run({
 		eachMessage: async ({ topic, partition, message }) => {
+			
 			//console.log("\n\nTOPIC: ", topic,"\n\n")
 			//console.log("\n\nMESSAGE: ", message,"\n\n")
-			console.log("\nMESSAGE:VALUE: ", message.value.toString(), "\n");
+
+			let data = message.value.toString()
+			console.log("\nMESSAGE:VALUE: ", data, "\n");
 			//let data = JSON.parse(message.value)    ;
 			//console.log(data)
+			cola.push(data)
+
+			console.log("\n\n\n COLA: ",data,"\n\n\n")
+
+			if(cola.length == 5){
+				console.log("\n\n Lote de entrega de tamanio 5 listo \n\n")
+				cola = []
+			}
+
+
 		},
 	});
 
-	console.log("Consumer terminado!");
+}
 
-	res.send("Consumer terminado!", message.value.toString());
-});
+real_time_stock()
+
 
 app.listen(3006, () => {
 	console.log("\nServer CONSUMER corriendo en puerto: 3006\n");
