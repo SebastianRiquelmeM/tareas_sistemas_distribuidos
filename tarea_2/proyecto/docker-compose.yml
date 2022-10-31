@@ -122,3 +122,17 @@ services:
             kakfaHost: kakfka:9092
         ports:
             - 3007:3007
+
+    estadisticas_ventas:
+        build:
+            context: ./scripts_extra/estadisticas_ventas
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - zookeeper
+            - kafka
+        environment:
+            PORT: 3008
+            kakfaHost: kakfka:9092
+        ports:
+            - 3008:3008
