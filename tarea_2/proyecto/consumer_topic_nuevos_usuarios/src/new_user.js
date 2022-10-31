@@ -42,7 +42,7 @@ const con = mysql.createConnection({
   callback(error, null);
 } */
 
-app.get("/consumer_registro_miembro", async (req, res) => {
+const real_time_register = async () => {
 	console.log("\n\n\n-------Mensaje consumer-------\n\n\n");
 
 	console.log("Iniciando objeto consumer...\n");
@@ -69,7 +69,7 @@ app.get("/consumer_registro_miembro", async (req, res) => {
 			//if particion corresponde a la de premium y se mete a la db
 			if (partition == 0) {
 				try {
-					let sql = `INSERT INTO registro_miembro (nombre,apellido,rut,correo,tipo_registro) VALUES ("${data.Nombre}","${data.Apellido}","${data.Rut}","${data.Correo}","${data.Patente}","${data.Registro}") `;
+					let sql = `INSERT INTO registro_miembro (nombre,apellido,rut,correo,tipo_registro) VALUES ("${data.Nombre}","${data.Apellido}","${data.Rut}","${data.Correo}","${data.Registro}") `;
 					con.query(sql, function (err, result) {
 						if (err) {
 							console.log(err);
@@ -84,7 +84,7 @@ app.get("/consumer_registro_miembro", async (req, res) => {
 				}
 			} else {
 				try {
-					let sql = `INSERT INTO registro_miembro (nombre,apellido,rut,correo,tipo_registro) VALUES ("${data.Nombre}","${data.Apellido}","${data.Rut}","${data.Correo}","${data.Patente}","${data.Registro}") `;
+					let sql = `INSERT INTO registro_miembro (nombre,apellido,rut,correo,tipo_registro) VALUES ("${data.Nombre}","${data.Apellido}","${data.Rut}","${data.Correo}","${data.Registro}") `;
 					con.query(sql, function (err, result) {
 						if (err) {
 							console.log(err);
@@ -108,9 +108,9 @@ app.get("/consumer_registro_miembro", async (req, res) => {
 	});
 
 	console.log("Consumer terminado!");
+};
 
-	res.send("Consumer terminado!");
-});
+real_time_register();
 
 app.listen(3001, () => {
 	console.log("\nServer CONSUMER corriendo en puerto: 3001\n");
