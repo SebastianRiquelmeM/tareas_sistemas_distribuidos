@@ -24,13 +24,13 @@ exports.generateArticles = () => {
 		readWikipedia.readWikipedia(articles[i]).then((data) => {
 			if (i + 1 <= 5) {
 				createDocuments.createDocuments(
-					"./documents/1",
+					"./documents/1/",
 					String(i + 1) + articles[i],
 					data
 				);
 			} else {
 				createDocuments.createDocuments(
-					"./documents/2",
+					"./documents/2/",
 					String(i + 1) + articles[i],
 					data
 				);
