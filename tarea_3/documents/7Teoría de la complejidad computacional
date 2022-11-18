@@ -1,0 +1,265 @@
+{{PA|referencias adicionales|copyedit}}
+La '''teoría de la complejidad computacional'''<ref name="Sin-nombre-p2KZ-1">{{Cita web|url=https://www.youtube.com/watch?v=OKg25T99Q4Q&t=11s|título=Complejidad Computacional}}</ref> o '''teoría de la complejidad informática''' es una rama de la [[teoría de la computación]] que se centra en la clasificación de los [[Problema computacional|problemas computacionales]] de acuerdo con su dificultad inherente, y en la relación entre dichas [[Clase de complejidad|clases de complejidad]].<ref>{{cita web |apellido=Dean |nombre=Walter |título=Computational Complexity Theory |url=https://plato.stanford.edu/entries/computational-complexity/ |website=The Stanford Encyclopedia of Philosophy |editorial=Metaphysics Research Lab, Stanford University |año=2016 |idioma=inglés}}</ref>
+
+Un problema se cataloga como "inherentemente difícil" si su solución requiere de una cantidad significativa de recursos computacionales, sin importar el algoritmo utilizado. La teoría de la complejidad computacional formaliza dicha aseveración, introduciendo  [[Modelo de computación|modelos de computación]] matemáticos para el estudio de estos problemas y la cuantificación de la cantidad de recursos necesarios para resolverlos, como tiempo y memoria.
+
+Una de las metas de la teoría de la complejidad computacional es determinar los límites prácticos de qué es lo que se puede hacer en una [[computadora]] y qué no. Otros campos relacionados con la teoría de la complejidad computacional son el [[análisis de algoritmos]] y la [[teoría de la computabilidad]]. Una diferencia significativa entre el análisis de algoritmos y la teoría de la complejidad computacional, es que el primero se dedica a determinar la cantidad de recursos requeridos por un algoritmo en particular para resolver un problema, mientras que la segunda, analiza todos los posibles algoritmos que pudieran ser usados para resolver el mismo problema.
+
+La teoría de la complejidad computacional trata de clasificar los problemas que pueden, o no pueden ser resueltos con una cantidad determinada de recursos. A su vez, la imposición de restricciones sobre estos recursos, es lo que la distingue de la teoría de la computabilidad, la cual se preocupa por qué tipo de problemas pueden ser resueltos de manera algorítmica.
+
+== Historia ==
+Antes de que se realizaran investigaciones en torno a la complejidad de los algoritmos, se crearon los cimientos de esta teoría por varios investigadores. Uno de los aportes más influyentes fue la definición de las [[Máquina de Turing|máquinas de Turing]] en 1936,<ref>{{cita libro |apellido= Senen Barro |nombre= Ameneiro |título= Fronteras de la computación |edición= 2 |año= 2002 |editorial= Diaz de Santos |isbn= 9788479785178 |capítulo=1 |páginas=11}}</ref> las cuales resultaron ser una noción de computadora muy flexible y robusta. A medida que las computadoras se desarrollaban en los 40's y los 50's, la Máquina de Turing demostró ser el modelo teórico correcto de cómputo.
+
+Sin embargo, rápidamente se descubrió que el modelo básico de la máquina de Turing fallaba al cuantificar el tiempo y la memoria requerida por una computadora, un problema crítico hoy en día, y aún más en aquellos tiempos. La idea de medir el tiempo y espacio como una función de la longitud de la entrada se originó a principios de los 60s por Hartmanis y Stearns, y así nació la teoría de la complejidad computacional.
+
+En los inicios, los investigadores trataban de entender las nuevas medidas de complejidad, y cómo se relacionaban unas con otras. En 1965, [[Jack Edmonds|Edmonds]] definió un "buen" algoritmo como uno con un [[tiempo de ejecución]] acotado por un [[polinomio]], es decir, con un [[tiempo polinómico|tiempo de ejecución polinómico]].<ref>Richard M. Karp, "Combinatorics, Complexity, and Randomness", 1985 Turing Award Lecture.</ref> Esto condujo al surgimiento de uno de los conceptos más importantes de la teoría de la complejidad computacional: la [[NP-completo|NP-completitud]] y su pregunta fundamental, si [[Clases de complejidad P y NP|P<nowiki>=</nowiki>NP]].
+
+El campo comenzó a florecer cuando el investigador estadounidense [[Stephen Cook]] y el soviético [[Leonid Levin]], trabajando de manera independiente, probaron que existen problemas relevantes que son NP-completos. En 1972, [[Richard Karp]] llevó esta idea un paso más adelante, demostrando que 21 problemas  [[Combinatoria|combinatorios]] y de [[teoría de grafos]], caracterizados por ser computacionalmente intratables, eran NP-completos.<ref>{{Citation | author = Richard M. Karp | chapter = Reducibility Among Combinatorial Problems | chapter-url = http://www.cs.berkeley.edu/~luca/cs172/karp.pdf | title = Complexity of Computer Computations | editor = R. E. Miller and J. W. Thatcher (editors) | publisher = New York: Plenum | pages = 85–103 | year = 1972}}.</ref> También en los 70's, se produjo un crecimiento de las clases de complejidad a medida que los investigadores trataban de comprender los distintos modelos de cómputo existentes.
+
+En los 80's, se produjo un auge de los modelos finitos, que analizaban el proceso de cómputo de una manera inherentemente distinta. Surgió un nuevo acercamiento a problemas como P<nowiki>=</nowiki>NP, y aun cuando estos modelos tenían sus limitaciones separando las clases de complejidad, esta aproximación introdujo técnicas combinatorias que permitieron un mejor entendimiento de los límites de estos modelos.
+
+Ya en los 90's, se estudiaron nuevos modelos de cómputo como las [[Computación cuántica|computadoras cuánticas]], donde una misma tarea puede tener diferente complejidad en la computación clásica y en la computación cuántica. Sin embargo, existen varias limitantes, entre ellas, la de desarrollar un hardware para este modelo, y que se requieren grandes cantidades de espacio para realizar los cálculos.
+
+== Problemas, algoritmos y complejidad ==
+Para poder referirnos a problemas como "inherentemente intratables" y problemas de dificultad "equivalente", es necesario comprender algunos términos más básicos.<ref>{{cita libro |apellido= García Merayo |nombre= Félix |título= Matemática discreta |edición= 3 |año= 2015 |editorial= Ediciones Paraninfo, S.A |isbn= 978-84-283-3568-3 |capítulo= 11.3 |páginas= 548 |cita= }} </ref>
+
+=== Problema computacional ===
+{{AP | Problema computacional}}
+
+Un problema computacional constituye una pregunta a ser respondida, teniendo generalmente varios parámetros, o variables libres, cuyos valores no se han especificado. Un problema se describe mediante:
+# Una descripción general de todos sus parámetros (pueden ser de entrada o de salida).
+# Una sentencia que describa las propiedades que la respuesta, o la solución, debe cumplir.
+
+Una instancia de un problema se obtiene cuando se especifican valores particulares para todos los parámetros del problema. Por ejemplo, consideremos el problema del test de primalidad. La instancia es un número (e.g. 15) y la solución es "sí" si el número es primo, y "no" en caso contrario. Visto de otra manera, la instancia es una entrada particular del problema, y la solución es la salida correspondiente para la entrada dada.
+
+=== Problemas de decisión ===
+{{AP | Problema de decisión}}
+
+Un problema de decisión es un tipo especial de problema computacional cuya respuesta es solamente "sí" o "no" (o, de manera más formal, "1" o "0").
+
+Un problema de decisión pudiera verse como un lenguaje formal, donde los elementos que pertenecen al lenguaje son las instancias del problema cuya respuesta es "sí", los que no pertenecen al lenguaje son aquellas instancias cuya respuesta es "no". El objetivo es decidir, con la ayuda de un algoritmo, si una determinada entrada es un elemento del lenguaje formal considerado. Si el algoritmo devuelve como respuesta "sí", se dice que el algoritmo ''acepta'' la entrada, de lo contrario se dice que la ''rechaza''.
+
+Los problemas de decisión constituyen uno de los principales objetos de estudio de la teoría de la complejidad computacional, pues la NP-completitud se aplica directamente a estos tipos de problemas en vez de a problemas de optimización. Estos problemas tienen gran importancia porque casi todo problema puede transformarse en un problema de decisión.
+
+=== Algoritmos ===
+{{AP | Algoritmo}}
+
+Podemos decir informalmente, que los algoritmos son procedimientos paso-a-paso para resolver problemas. Se puede pensar en ellos como simples programas de computadora, escritos en un lenguaje artificial específico.<ref>Garey, Michael R., Johnson David S., (1979), ''[[Computers and Intractability: A Guide to the Theory of NP-Completeness]]'', W. H. Freeman, (page 4).</ref>
+
+Se dice que un algoritmo resuelve un problema A, si dicho algoritmo se puede aplicar a cualquier instancia I de A, y se garantiza que siempre produce una solución para dicha instancia. De manera general, nos interesa encontrar el algoritmo más "eficiente" para resolver cierto problema. En su sentido más amplio, la noción de eficiencia involucra a todos los recursos computacionales necesarios para la ejecución de un algoritmo.
+
+Por algoritmo "más eficiente" usualmente nos referimos al más rápido. Debido a que los requerimientos de tiempo son usualmente un factor dominante cuando se trata de determinar si un algoritmo es lo suficientemente eficiente para ser útil en la práctica, nos concentraremos en este recurso.
+
+=== Algoritmos de tiempo polinómico y problemas intratables ===
+Los científicos de la computación realizan la distinción entre algoritmos de [[Tiempo polinómico]] y algoritmos de [[tiempo exponencial]] cuando se trata de caracterizar a los algoritmos como "suficientemente eficiente" y "muy ineficiente" respectivamente.
+
+Un ''algoritmo de tiempo polinomial'' <ref name="Sin-nombre-p2KZ-1"/>se define como aquel con función de complejidad temporal dentro de una [[cota superior asintótica]] (denominada a veces "orden") [[O grande|O]](''p''(''n'')) para alguna función polinómica ''p'', donde ''n'' denota el tamaño de la entrada. Los algoritmos de tiempo exponencial, <math>O(e^n),</math> son los que el número de ciclos que tienen que realizarse con el algoritmo es proporcional a la función <math>e^n</math> de modo que el poder computacional necesario para correr el algoritmo crece de forma exponencial al tamaño <math>n</math> del problema. 
+
+La mayoría de los algoritmos de tiempo exponencial son simples variaciones de una búsqueda exhaustiva, mientras que los algoritmos de tiempo polinomial, usualmente se obtienen mediante un análisis más profundo de la estructura del problema. En la teoría de la complejidad computacional, existe el consenso de que un problema no está "bien resuelto" hasta que se conozca un algoritmo de tiempo polinomial que lo resuelva. Por tanto, nos referiremos a un problema como ''intratable'', si es tan difícil que no existe algoritmo de tiempo polinomial capaz de resolverlo.<ref>Garey, Michael R., Johnson David S., (1979), ''[[Computers and Intractability: A Guide to the Theory of NP-Completeness]]'', W. H. Freeman, (page 8).</ref>
+
+== Clases de complejidad ==
+{{AP|Clase de complejidad}}
+Una '''clase de complejidad''' es un conjunto de problemas que poseen la misma complejidad computacional.
+
+=== Definiendo clases de complejidad ===
+Las clases de complejidad más sencillas se definen teniendo en cuenta factores como:
+* El tipo de problema computacional: Los problemas más comúnmente utilizados son los problemas de decisión, pero las clases de complejidad se pueden definir para otros tipos de problemas.
+* El modelo de cómputo: El modelo de cómputo más común es la Máquina de Turing determinista, pero muchas clases de complejidad se basan en Máquinas de Turing no deterministas, Máquinas de Turing cuánticas, etc.
+* El recurso (o recursos) que está(n) siendo acotado(s) y la(s) cota(s): Estas dos propiedades usualmente se utilizan juntas, por ejemplo, "tiempo polinomial", "espacio logarítmico", "profundidad constante", etc.
+
+=== Máquinas de Turing deterministas y la clase P ===
+{{AP | P (clase de complejidad)}}
+La clase P contiene a aquellos problemas resolubles en tiempo polinómico por una máquina de Turing determinista.<ref>Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L. & Stein, Clifford, (2010), ''[[Introduction to Algorithms]]'', 3.ª edición, [[MIT Press]] and McGraw-Hill, (page 1049).</ref>
+
+Para la definición anterior se ha fijado el modelo de cómputo: la Máquina de Turing determinista. Existen distintas variantes de la Máquina de Turing y es conocido que la más débil de ellas puede simular a la más fuerte, adicionando a lo sumo un tiempo polinómico. En las décadas posteriores a la [[Tesis de Church-Turing]] surgieron otros modelos de cómputo, y se pudo mostrar que la Máquina de Turing también podía simularlos a lo sumo adicionando también un tiempo polinómico. Por tanto, la clase análoga a P para dichos modelos no es mayor que la clase P para el modelo de cómputo de la máquina de Turing.
+
+La clase P juega un papel importante en la teoría de la complejidad computacional debido a que:
+# P es invariante para todos los modelos de cómputo que son polinómica mente equivalentes a la Máquina de Turing determinista.
+# A grandes rasgos, P corresponde a la clase de problemas que, de manera realista, son solubles en una computadora.
+
+=== Computación no determinista y la clase NP ===
+{{AP | NP (clase de complejidad)}}
+Muchas veces podemos evitar utilizar la fuerza bruta en los problemas para obtener soluciones en tiempo polinómico. Sin embargo, para algunos problemas esto no ha podido lograrse, es decir, no se conocen algoritmos que los resuelvan en tiempo polinómico. Quizás estos problemas tengan algoritmos en tiempo polinomial que se basan en principios por ahora desconocidos, o quizás estos problemas ''no'' pueden ser resueltos en tiempo polinómico, debido a que son "inherentemente difíciles".
+
+La clase de complejidad NP consta de los problemas "verificables" en tiempo polinómico. Por verificable se entiende a un problema tal que dado un certificado de solución (candidato a solución), se puede verificar que dicho certificado es correcto en un tiempo polinómico en el tamaño de la entrada. A los problemas en la clase NP usualmente se les llama ''problemas NP''.<ref>Garey, Michael R., Johnson David S., (1979), ''[[Computers and Intractability: A Guide to the Theory of NP-Completeness]]'', W. H. Freeman, (page 28).</ref>
+
+El término NP proviene de '''''no determinista en tiempo polinómico''''' y se deriva de un caracterización alternativa de esta clase, donde se utilizan Máquinas de Turing no deterministas. Informalmente, se puede definir la clase NP en términos de un ''algoritmo no determinista'' (recordar la equivalencia entre algoritmo y Máquina de Turing).
+
+El algoritmo mencionado está compuesto por 2 etapas separadas. Dada una instancia del problema I, la primera etapa simplemente "adivina" un candidato a solución S. Entonces, la etapa de verificación recibe como entrada a I y a S, y procede a realizar el cómputo de una manera determinista, finalmente deteniéndose con la respuesta "sí", o con la respuesta "no", o sigue computando sin detenerse.
+
+Al igual que la clase P, la clase NP es insensible a la elección del modelo de cómputo no determinista, debido a que dichos modelos son equivalentes polinómicamente.
+
+=== Clases de complejidad importantes ===
+
+Muchas clases de complejidad importantes pueden ser definidas acotando el tiempo o el espacio utilizado por el algoritmo. Algunas de estas clases de problemas de decisión son:
+
+{| class="wikitable" cellpadding="1" cellspacing="0" border="1"
+|-
+! Clase de complejidad
+! Modelo de cómputo
+! Restricción de recurso
+|-
+| [[DTIME]](''f''(''n''))
+| Máquina de Turing determinista
+| Tiempo&nbsp;''f''(''n'')
+|-
+| [[P (clase de complejidad)|P]]
+| Máquina de Turing determinista
+| Tiempo poly(''n'')
+|-
+| [[PP (clase de complejidad)|PP]]
+| Máquina de Turing no determinista
+| Tiempo poly(''n'')
+|-
+|-
+| [[EXPTIME]]
+| Máquina de Turing determinista
+| Tiempo 2<sup>poly(''n'')</sup>
+|-
+| [[NTIME]](''f''(''n''))
+| Máquina de Turing no determinista
+| Tiempo&nbsp;''f''(''n'')
+|-
+| [[NP (clase de complejidad)|NP]]
+| Máquina de Turing no determinista
+| Tiempo poly(''n'')
+|-
+| [[NEXPTIME]]
+| Máquina de Turing no determinista
+| Tiempo 2<sup>poly(''n'')</sup>
+|-
+| [[DSPACE]](''f''(''n''))
+| Máquina de Turing determinista
+| Espacio&nbsp;''f''(''n'')
+|-
+| [[L (clase de complejidad)|L]]
+| Máquina de Turing determinista
+| Espacio O(log ''n'')
+|-
+| [[PSPACE]]
+| Máquina de Turing determinista
+| Espacio poly(''n'')
+|-
+| [[EXPSPACE]]
+| Máquina de Turing determinista
+| Espacio 2<sup>poly(''n'')</sup>
+|-
+| [[NSPACE]](''f''(''n''))
+| Máquina de Turing no determinista
+| Espacio&nbsp;''f''(''n'')
+|-
+| [[NL (clase de complejidad)|NL]]
+| Máquina de Turing no determinista
+| Espacio O(log ''n'')
+|-
+| [[NPSPACE]]
+| Máquina de Turing no determinista
+| Espacio poly(''n'')
+|-
+|  [[EXPSPACE|NEXPSPACE]]
+| Máquina de Turing no determinista
+| Espacio 2<sup>poly(''n'')</sup>
+|}
+
+== La pregunta P<nowiki>=</nowiki>NP ==
+{{AP | Clases de complejidad P y NP}}
+
+La relación entre las clases P y NP es fundamental para la teoría de la NP-completitud. Intuitivamente, creemos que P es un subconjunto de NP. Y, efectivamente, cada problema de decisión resuelto por un algoritmo de tiempo polinomial determinista, también puede ser resuelto por un algoritmo de tiempo polinomial no determinista. Simplemente se necesita observar que cualquier algoritmo determinista puede ser utilizado en la etapa de verificación de un algoritmo no determinista. Si B es un problema de P, y A es un algoritmo de tiempo polinomial para B, entonces se puede construir un algoritmo de tiempo polinomial no determinista para B, simplemente utilizando A en la etapa de verificación e ignorando la etapa de adivinación. Por tanto, si B pertenece a P, entonces B también pertenece a NP.
+
+La pregunta P<nowiki>=</nowiki>NP es una de las más importantes en el campo de las ciencias de la computación, debido a las grandes repercusiones que habría, en caso de encontrarse una solución. Si P<nowiki>=</nowiki>NP, cualquier problema polinómica mente verificable sería polinómica mente decidible. La mayoría de los investigadores cree que estas clases no son iguales, porque se ha realizado bastantes esfuerzos, sin éxito, para encontrar algoritmos de tiempo polinomial para varios problemas en NP. Los investigadores también han tratado de probar que las clases son distintas, pero eso conllevaría a mostrar que no existe un algoritmo «eficiente» para reemplazar a la búsqueda por fuerza bruta.
+
+== NP-Completitud ==
+
+=== Reducción polinomial ===
+{{AP | Transformación polinómica}}
+
+Una reducción es una transformación de un problema en otro problema. Intuitivamente, un problema Q puede ser reducido a otro problema Q', si cualquier instancia del problema Q puede ser "fácilmente" expresada como una instancia del problema Q', y cuya solución proporcione una solución para la instancia de Q.<ref>Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L. & Stein, Clifford, (2010), ''[[Introduction to Algorithms]]'', 3.ª edición, MIT Press and McGraw-Hill, (page 1067).</ref>
+
+Existen muchos tipos de reducciones: basadas en el método de reducción, como las reducciones de Cook, las reducciones de Karp y las reducciones de Levin, y las basadas en la cota de la complejidad, como la  [[Transformación polinómica|reducción en tiempo polinomial]] o la reducción de espacio logarítmica. Una de las reducciones más utilizadas es la reducción en tiempo polinomial, lo cual significa que el proceso de reducción toma un tiempo polinomial.
+
+=== Problemas NP-completos ===
+{{AP | NP-completo}}
+
+Las reducciones en tiempo polinomial nos dotan de elementos para probar, de una manera formal, que un problema es al menos tan difícil que otro, con una diferencia de un factor polinomial. Estas son esenciales para definir a los  [[NP-completo|problemas NP-completos]], además de ayudar a comprender los mismos.
+
+La clase de los problemas NP-completos contiene a los problemas más difíciles en NP, en el sentido de que son los que estén más lejos de estar en P. Debido a que el problema P<nowiki>=</nowiki>NP no ha sido resuelto, el hecho de reducir un problema B, a otro problema A, indicaría que no se conoce solución en tiempo polinomial para A. Esto es debido a que una solución en tiempo polinomial para A, tendría como consecuencia la existencia de una solución polinomial para B. De manera similar, debido a que todos los problemas NP pueden ser reducidos a este conjunto, encontrar un problema NP-completo que pueda ser resuelto en un tiempo polinomial significaría que P<nowiki>=</nowiki>NP.
+
+=== Importancia de la NP-Completitud ===
+
+Quizás la razón de mayor peso por la cual los científicos de la computación creen que P es distinto de NP, es la existencia de la clase de problemas "NP-completos". Esta clase tiene la curiosa propiedad de que si algún problema NP-completo puede ser resuelto en tiempo polinomial, entonces todo problema en NP tiene una solución en tiempo polinomial, es decir, P<nowiki>=</nowiki>NP. A pesar de años de estudio, ningún algoritmo de tiempo polinomial se ha descubierto para ningún problema NP-completo.
+
+Desde el punto de vista teórico, un investigador intentando mostrar que la clase P es distinta de la clase NP, pudiera enfocarse en un problema NP-completo. Si algún problema en NP requiere más que un tiempo polinomial, entonces uno NP-completo también. Además, un investigador intentando demostrar que P<nowiki>=</nowiki>NP, solo necesita encontrar un algoritmo de tiempo polinomial para un problema NP-completo para lograrlo.
+
+Desde el punto de vista práctico, el fenómeno de la NP-completitud puede prevenir la pérdida de tiempo cuando se busca un algoritmo de tiempo polinomial no existente para resolver un problema determinado. Aun cuando no se posean los elementos matemáticos para demostrar que cierto problema no se puede resolver en tiempo polinomial, creemos que P no es igual a NP, así que demostrar que el problema es NP-completo, es una fuerte evidencia de su no "polinomialdad".
+
+== Haciendo frente a problemas NP ==
+Teniendo en cuenta la definición de problema intratable, si no se cumple que P<nowiki>=</nowiki>NP, entonces los problemas NP-completos son intratables.
+
+Muchos problemas de la práctica son NP-completos, y son muy importantes como para desistir simplemente porque no sabemos cómo encontrar una solución óptima en tiempo polinomial. Aunque un problema sea NP-completo, puede haber esperanza. Existen tres estrategias fundamentales para lidiar con un problema NP-completo:
+* Si la entrada es pequeña, un algoritmo con tiempo de ejecución exponencial pudiera ser perfectamente aceptable.
+
+* Se pudieran aislar algunos casos especiales que se pudieran resolver en tiempo polinomial.
+
+* Podríamos utilizar aproximaciones para encontrar soluciones lo suficientemente cercanas al óptimo en tiempo polinomial. En la práctica, obtener soluciones cercanas al óptimo es bastante aceptable. A estos algoritmos se les denomina  [[Algoritmo de aproximación|algoritmos de aproximación]], y en muchos casos se apoyan en  [[heurística]]s y  [[metaheurística]]s.
+
+== Véase también ==
+* [[Reducción (complejidad)]]
+* [[Teorema de Cook-Levin]]
+* [[Lista de 21 problemas NP-completos de Karp]]
+* [[Clases de complejidad P y NP]]
+* [[Teorema de la jerarquía temporal]]
+* [[Anexo:Clases de complejidad]]
+* [[Complejidad de Kolmogórov]]
+
+== Referencias ==
+{{listaref}}
+
+=== Artículos ===
+* {{Citation | last1=Cook | first1=Stephen | author1-link=Stephen Cook | title=An overview of computational complexity | publisher=ACM | year=1983 | journal=Commun. ACM | issn=0001-0782 | volume=26 | issue=6 | pages = 400–408}}
+
+* {{Citation | last1=Fortnow | first1=Lance | last2=Homer | first2=Steven | title=A Short History of Computational Complexity | year = 2002 | journal=Bulletin of the EATCS | volume=80 | pages=95–133 | url = http://people.cs.uchicago.edu/~fortnow/papers/history.pdf}}
+
+=== Libros de texto ===
+* {{
+Citation
+| last1=Arora | first1=Sanjeev | authorlink1=Sanjeev Arora
+| last2=Barak | first2=Boaz
+| title=Computational Complexity: A Modern Approach
+| url = http://www.cs.princeton.edu/theory/complexity/
+| publisher=[[Cambridge University Press|Cambridge]]
+| year=2009
+| isbn=978-0-521-42426-4
+| zbl=1193.68112
+}}
+
+* {{
+Citation
+|last=Sipser
+|first=Michael
+|title=[[Introduction to the Theory of Computation]]
+|edition = 2da
+|year = 2006
+|publisher =  [[Thomson Learning|Thomson Course Technology]]
+|location = USA
+|isbn = 0-534-95097-3
+}}
+
+<!-- Aquí no puse la plantilla para el Garey and Johnson porque parece que en la wiki en español no existe -->
+*  [[Michael Garey|Garey, Michael R.]];  [[David S. Johnson|Johnson, David S.]], (1979), ''[[Computers and Intractability: A Guide to the Theory of NP-Completeness]]'', W. H. Freeman, ISBN 0-7167-1045-5.
+
+* {{
+Citation 
+| authorlink = Thomas H. Cormen | first = Thomas H. |last = Cormen 
+| authorlink2 = Charles E. Leiserson | first2 = Charles E. |last2 = Leiserson 
+| authorlink3 = Ronald L. Rivest | first3 = Ronald L. | last3 = Rivest | lastauthoramp = yes 
+| authorlink4 = Clifford Stein | first4 = Clifford | last4 = Stein 
+| title = [[Introduction to Algorithms]] 
+| edition = 3ra 
+| publisher = MIT Press and McGraw-Hill 
+| location = Cambridge, MA 
+| year = 2010 
+| isbn = 0-262-03384-4
+}}.
+
+{{Control de autoridades}}
+[[Categoría:Complejidad computacional]]
