@@ -1,0 +1,105 @@
+[[Archivo:Intel mainboard DX58SO IMGP5949 wp wp.jpg|miniaturadeimagen|Una [[placa base]] de [[Zócalo de CPU|socket]] [[Intel]], uno de los componentes más esenciales del [[hardware]] de una [[computadora]].]]
+[[Archivo:Hello World C++.png|miniaturadeimagen|[[Código fuente]] de un [[programa Hola Mundo]] en [[lenguaje de programación C++]].]]
+La '''informática''',<ref>{{Cita web|url=https://nces.ed.gov/ipeds/cipcode/CIPDetail.aspx?y=56&cipid=91492|título=CIP user site|fechaacceso=22 de noviembre de 2019|sitioweb=nces.ed.gov}}</ref> también llamada '''computación''',<ref>{{Cita DLE|computación|Computación|fechaacceso=13 de agosto de 2014}}</ref> es el área de la [[ciencia]] que se encarga de estudiar la administración de métodos, técnicas y procesos con el fin de almacenar, procesar y transmitir [[información]] y [[dato]]s en formato [[electrónica digital|digital]]. La informática abarca desde disciplinas teóricas (como algoritmos, teoría de la computación y teoría de la información) hasta disciplinas prácticas (incluido el diseño y la implementación de hardware y software).<ref>{{Cita web|url=https://www.dictionary.com/browse/computer-science|título=Definition of computer science {{!}} Dictionary.com|fechaacceso=2022-06-03|sitioweb=www.dictionary.com|idioma=en}}</ref> La informática generalmente se considera un área de investigación académica y distinta de la [[Programación|programación informática]].<ref>{{Cita publicación|url=http://ieeexplore.ieee.org/document/19833/|título=Computing as a discipline|apellidos=Denning|nombre=P.J.|apellidos2=Comer|nombre2=D.E.|fecha=1989-02|publicación=Computer|volumen=22|número=2|páginas=63–70|fechaacceso=2022-06-03|issn=0018-9162|doi=10.1109/2.19833|apellidos3=Gries|nombre3=D.|apellidos4=Mulder|nombre4=M.C.|apellidos5=Tucker|nombre5=A.|apellidos6=Turner|nombre6=A.J.|apellidos7=Young|nombre7=P.R.}}</ref> 
+
+De esta manera, la informática se refiere al procesamiento automático de información mediante [[Aparato electrónico|dispositivos electrónicos]] y sistemas computacionales. Los sistemas informáticos deben contar con la capacidad de cumplir tres tareas básicas: [[input|entrada]] (input, captación de la información), [[Procesamiento de datos|procesamiento]] y [[output|salida]] (transmisión de los resultados).
+
+No existe una definición consensuada sobre el término. Sin embargo, la Asociación de Docentes de Informática y Computación de la República Argentina ha tomado una posición, definiéndola de la siguiente manera: «La informática es la disciplina o campo de estudio que abarca el conjunto de conocimientos, métodos y técnicas referentes al tratamiento automático de la información, junto con sus teorías y aplicaciones prácticas, con el fin de almacenar, procesar y transmitir datos e información en formato digital utilizando sistemas computacionales. Los datos son la materia prima para que, mediante su proceso, se obtenga como resultado información. Para ello, la informática crea y/o emplea sistemas de procesamiento de datos, que incluyen medios físicos ([[hardware]]) en interacción con medios lógicos ([[software]]) y las personas que los programan y/o los usan ([[humanware]])».<ref>{{Cita web|url=https://adicra.org.ar/informatica/|título=ADICRA: ¿De qué hablamos cuando hablamos de Informática?}}</ref>
+
+Es por lo que se hace distinción entre este término y las [[ciencias de la computación]], puesto que el segundo engloba la parte más teórica mientras que informática se refiere a la aplicabilidad de esta anterior en datos usando dispositivos electrónicos. De hecho, se definen cinco subdisciplinas del campo de la informática: [[ciencias de la computación]], [[ingeniería informática]], [[Sistema de información|sistemas de información]], [[tecnología de la información]] e [[ingeniería de software]].<ref>{{cita web|url=http://www.acm.org/education/curricula-recommendations |título=Curricula Recommendations |editorial=[[Association for Computing Machinery]] |año=2005 |fechaacceso=30 de noviembre de 2012}}</ref>
+
+La informática es la forma científica de procesar la información. Este procesamiento consiste en ordenar, seleccionar, ejecutar cálculos de forma que nos permita extraer conclusiones de la información manipulada. Procesar información es transformar datos primarios en información organizada, significativa y útil, que a su vez está compuesta de datos.
+La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del {{siglo|XX||s}} con la aparición de tecnologías como el [[circuito integrado]], el [[Internet]] y el [[teléfono móvil]],<ref>''[https://books.google.com.uy/books?id=LCSre6DUJOoC&printsec=frontcover&dq=%22Inform%C3%A1tica,+informaci%C3%B3n,+y+comunicaci%C3%B3n%22&hl=es-419&sa=X&ved=0ahUKEwj4uci8vefRAhXBf5AKHdagCdIQ6wEIIjAA#v=onepage&q=%22Inform%C3%A1tica%2C%20informaci%C3%B3n%2C%20y%20comunicaci%C3%B3n%22&f=false "Informática, información, y comunicación"]'', en 'Documentación Social: Revista de Estudios Sociales y de Tecnología Aplicada', n° 108, julio-septiembre 1999 ([https://books.google.com.uy/books?id=LCSre6DUJOoC&pg=PA76&dq=information+superhighway+%22Inform%C3%A1tica,+informaci%C3%B3n,+y+comunicaci%C3%B3n%22+%22Al+Gore%22&hl=es-419&sa=X&ved=0ahUKEwjvocO8vOfRAhVKiZAKHf3YAv8Q6AEIGjAA#v=onepage&q=information%20superhighway%20%22Inform%C3%A1tica%2C%20informaci%C3%B3n%2C%20y%20comunicaci%C3%B3n%22%20%22Al%20Gore%22&f=false consultar texto en línea pp. 76-82])</ref> es la rama de la tecnología que estudia el tratamiento automático de la información.<ref>Diego Dikygs, ''[http://nocionesdeinformatica.blogspot.com.uy/2011/04/tratamiento-automatico-de-la.html Tratamiento (Automático) de la Información]'', sitio digital 'Nociones de Informática', 12 de abril de 2011.</ref><ref>''[http://www.monografias.com/trabajos/histocomp/histocomp.shtml Historia de la Computación]'', sitio digital 'Monografías'.</ref>
+
+En 1957, [[Karl Steinbuch]] añadió la palabra alemana ''Informatik'' en la publicación de un documento denominado ''Informatik: Automatische Informationsverarbeitung'' (Informática: procesamiento automático de información).<ref name="patricio" /> El soviético [[Alexander Mikhailov|Alexander Ivanovich Mikhailov]] fue el primero en utilizar ''Informatik'' con el significado de «estudio, organización y diseminación de la información científica», que sigue siendo su significado en dicha lengua.<ref name="patricio">Patricio Villalva, ''[http://patricioinformaticaavanzada.blogspot.com.uy/p/informatica.html ¿Qué es la Informática?]'', sitio digital 'Informática avanzada'.</ref> En inglés, la palabra ''informatics'' fue acuñada independiente y casi simultáneamente por [[Walter F. Bauer]], en 1962, cuando Bauer cofundó la empresa Informatics General, Inc.<ref name="patricio" />
+
+== Orígenes de la informática ==
+
+{{AP|Anexo:Historia de la computación}} 
+La [[disciplina]]  de la informática es anterior a la creación de las [[computadora]]s. Ya en la antigüedad se conocían métodos para realizar cálculos matemáticos, por ejemplo el [[algoritmo de Euclides]]. En el {{siglo|XVII||s}} comenzaron a inventarse máquinas [[calculadora]]s. La herramienta más antigua conocida para su uso en computación es el ábaco, y se cree que fue inventado en Babilonia alrededor del 2400 a. C. Su diseño original de uso fue por líneas dibujadas en arena con guijarros. Abaci, de un diseño más moderno, todavía se utilizan como herramientas de cálculo en la actualidad. Esta fue la primera ayuda de cálculo conocida, precediendo a los métodos griegos por 2000 años.<ref>{{Cite web |date=2021-06-30 |title=20 Advantage and Disadvantage of Computer {{!}} What Are the Advantages of a Computer |url=https://englishfun.in/advantage-and-disadvantage-of-computer/ |access-date=2022-07-04 |language=en-US}}</ref>
+
+En el {{siglo|XIX||s}} se desarrollaron las primeras máquinas programables, es decir, que el usuario podría modificar la secuencia de acciones a realizar a través de algoritmos específicos. La primera propuesta registrada para el uso de la electrónica digital en la informática fue el artículo de 1931 "El uso de tiratrones para el conteo automático de fenómenos físicos a alta velocidad" de [[C. E. Wynn-Williams]].<ref>{{Citation | last = Wynn-Williams | first = C. E. | author-link = C. E. Wynn-Williams | title = The Use of Thyratrons for High Speed Automatic Counting of Physical Phenomena | journal = [[Proceedings of the Royal Society A]] | volume = 132 | issue = 819 | pages = 295–310 | date = 1931-07-02 | doi = 10.1098/rspa.1931.0102 |bibcode = 1931RSPSA.132..295W  }}</ref> El artículo de 1938 de [[Claude Shannon]] "[[Un análisis simbólico de los circuitos de conmutación y relés]]" introdujo la idea de utilizar la electrónica para las operaciones de [[álgebra booleana]].
+
+[[Archivo:Asus_P5K-SEIntel_E6320.jpg|thumb|250px|Caja de ordenador con un procesador LGA775 de Intel, con la tarjeta madre, el ventilador del procesador, la alimentación eléctrica, y la memoria.]]
+
+El concepto de un [[transistor de efecto de campo]] fue propuesto por [[Julius Edgar Lilienfeld]] en 1925. [[John Bardeen]] y [[Walter Brattain]], mientras trabajaban con [[William Shockley]] en [[Bell Labs]], construyó el primer [[transistor]] en funcionamiento, el [[transistor de contacto puntual]], en 1947.<ref name="Lee">{{cite book |last1=Lee |first1=Thomas H. |title=The Design of CMOS Radio-Frequency Integrated Circuits |date=2003 |publisher=[[Cambridge University Press]] |isbn=9781139643771 |url=https://web.stanford.edu/class/archive/ee/ee214/ee214.1032/Handouts/HO2.pdf |access-date=2019-09-16 |archive-date=2019-12-09 |archive-url=https://web.archive.org/web/20191209032130/https://web.stanford.edu/class/archive/ee/ee214/ee214.1032/Handouts/HO2.pdf }}</ref><ref name="Puers">{{cite book |last1=Puers |first1=Robert |last2=Baldi |first2=Livio |last3=Voorde |first3=Marcel Van de |last4=Nooten |first4=Sebastiaan E. van |title=Nanoelectronics: Materials, Devices, Applications, 2 Volumes |date=2017 |publisher=[[John Wiley & Sons]] |isbn=9783527340538 |page=14 |url=https://books.google.com/books?id=JOqVDgAAQBAJ&pg=PA14}}</ref> En 1953, la [[Universidad de Mánchester]] construyó la primera [[ordenador transistorizado]], llamada [[Ordenadores de Manchester|ordenador de transistores]].<ref>{{Citation|last=Lavington|first=Simon|title=A History of Manchester Computers|year=1998|edition=2|publisher=The British Computer Society|location=Swindon|pages=34–35}}</ref> Sin embargo, los primeros transistores de unión eran dispositivos relativamente voluminosos que eran difíciles de producir en masa, lo que los limitaba a una serie de aplicaciones especializadas.<ref name="Moskowitz">{{cite book |last1=Moskowitz |first1=Sanford L. |title=Advanced Materials Innovation: Managing Global Technology in the 21st century |date=2016 |publisher=[[John Wiley & Sons]] |isbn=9780470508923 |pages=165–167 |url=https://books.google.com/books?id=2STRDAAAQBAJ&pg=PA165}}</ref> El [[MOSFET|transistor de efecto de campo de óxido de metal-silicio]] (MOSFET, o transistor MOS) fue inventado por [[Mohamed Atalla]] y [[Dawon Kahng]] en Bell Labs en 1959.<ref name="computerhistory">{{cite journal|url=https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/|title=1960 - Metal Oxide Semiconductor (MOS) Transistor Demonstrated|journal=The Silicon Engine|publisher=[[Computer History Museum]]}}</ref><ref name="Lojek">{{cite book |last1=Lojek |first1=Bo |title=History of Semiconductor Engineering |url=https://archive.org/details/historysemicondu00loje_697 |date=2007 |publisher=[[Springer Science & Business Media]] |isbn=9783540342588 |pages=[https://archive.org/details/historysemicondu00loje_697/page/n327 321]–3}}</ref> Fue el primer transistor verdaderamente compacto que podía ser [[escala MOSFET|miniaturizado]] y [[ley de Moore|producido en masa]] para una amplia gama de usos.<ref name="Moskowitz" /> El MOSFET hizo posible construir chiìs de [[circuitos integrados]] de [[integración a muy gran escala|alta densidad]],<ref name="computerhistory-transistor">{{cite web |title=Who Invented the Transistor? |url=https://www.computerhistory.org/atchm/who-invented-the-transistor/ |website=[[Computer History Museum]] |date=2013-12-04 |access-date=2019-07-20}}</ref><ref name="Hittinger">{{cite journal |last1=Hittinger |first1=William C. |title=Metal-Oxide-Semiconductor Technology |journal=Scientific American |date=1973 |volume=229 |issue=2 |pages=48–59 |issn=0036-8733|jstor=24923169 |doi=10.1038/scientificamerican0873-48 |bibcode=1973SciAm.229b..48H }}</ref> dando lugar a lo que se conoce como la [[revolución informática]]<ref>{{cite book|author1-link=Jerry G. Fossum |last1=Fossum |first1=Jerry G. |last2=Trivedi |first2=Vishal P. |title=Fundamentals of Ultra-Thin-Body MOSFETs and FinFETs |date=2013 |publisher=[[Cambridge University Press]] |isbn=9781107434493 |page=vii |url=https://books.google.com/books?id=zZJfAAAAQBAJ&pg=PR7}}</ref> o [[revolución de la microcomputadora]].<ref>{{cite book |last1=Malmstadt |first1=Howard V. |last2=Enke |first2=Christie G. |last3=Crouch |first3=Stanley R. |title=Making the Right Connections: Microcomputers and Electronic Instrumentation |date=1994 |publisher=[[American Chemical Society]] |isbn=9780841228610 |page=389 |url=https://books.google.com/books?id=lyJGAQAAIAAJ |quote=The relative simplicity and low power requirements of MOSFETs have fostered today's microcomputer revolution.}}</ref>
+
+En los inicios del procesamiento automático de la información, con la informática solo se facilitaban los trabajos repetitivos y monótonos del área administrativa. La automatización de esos procesos trajo como consecuencia directa una disminución de los costes y un incremento en la productividad. En la informática convergen los fundamentos de las [[ciencias de la computación]], la [[programación]] y también las metodologías para el desarrollo de ''[[software]]'', la [[arquitectura de computadoras|arquitectura de las computadoras]], las [[red de computadoras|redes de computadores]], la [[inteligencia artificial]] y ciertas cuestiones relacionadas con la [[electrónica]]. Se puede entender por informática a la unión [[:drae:sinergia|sinérgica]] de todo este conjunto de disciplinas. Esta disciplina se aplica a numerosas y variadas áreas del conocimiento o la actividad humana, por ejemplo: [[administración|gestión de negocios]], [[dispositivo de almacenamiento de datos|almacenamiento]] y consulta de información; monitorización y control de [[Proceso (informática)|procesos]], [[industria]], [[robótica]], comunicaciones, control de [[transporte]]s, [[investigación]], desarrollo de [[Videojuego|juegos]], [[diseño]] computarizado, aplicaciones/herramientas [[multimedia]], [[medicina]], [[biología]], [[física]], [[química]], [[meteorología]], [[ingeniería]], [[arte]], etc. Puede tanto facilitar la [[toma de decisiones]] a nivel [[Director ejecutivo|gerencial]] (en una [[empresa]]) como permitir el control de [[Proceso de fabricación|procesos]] críticos. Actualmente, es difícil concebir un área que no esté vinculada o requiera del apoyo de la informática. Esta puede cubrir un enorme abanico de funciones, que van desde las más simples cuestiones domésticas hasta los cálculos científicos más complejos. Entre las funciones principales de la informática se enumeran las siguientes:
+* Creación de nuevas especificaciones de trabajo.
+* Desarrollo e implementación de sistemas informáticos.
+* Sistematización de procesos.
+* Optimización de los métodos y sistemas informáticos existentes.
+* Facilitar la automatización de datos y formatos.<ref>{{Cita web|url=http://salamancartvaldia.es/not/173931/informatica-sector-salidas-unicas/|título=Informática, un sector con salidas únicas|fechaacceso=6 de marzo de 2018|autor=Salamanca Al Día|enlaceautor=|fecha=9 de enero de 2020|sitioweb=|editorial=|idioma=|fechaarchivo=9 de marzo de 2018|urlarchivo=https://web.archive.org/web/20180309174408/http://salamancartvaldia.es/not/173931/informatica-sector-salidas-unicas|deadurl=yes}}</ref>
+
+== Sistemas de tratamiento de la información ==
+
+Los [[sistema informático|sistemas computacionales]], generalmente implementados como [[aparato electrónico|dispositivos electrónicos]], permiten el [[razonamiento automático|procesamiento automático]] de la [[dato|información]]. Conforme a ello, los [[sistema informático|sistemas informáticos]] deben realizar las siguientes tres tareas básicas:
+
+* [[Entrada/salida|Entrada]]: captación de la información. Normalmente son datos y órdenes ingresadas por los usuarios a través de cualquier dispositivo de entrada conectado a la computadora.
+* [[Proceso (informática)|Proceso]]: tratamiento de la información. Se realiza a través de programas y aplicaciones diseñadas por programadores que indican de forma secuencial cómo resolver un requerimiento.
+* [[Entrada/salida|Salida]]: transmisión de resultados. A través de los dispositivos de salida los usuarios pueden visualizar los resultados que surgen del procesamiento de los datos.
+* Sistema operativo es un conjunto de programas que permite interactuar al usuario con la computadora.
+* Sistemas de mando y control, son sistemas basados en la mecánica y motricidad de dispositivos que permiten al usuario localizar, dentro de la logística, los elementos que se demandan. Están basados en la electricidad, o sea, no en el control del flujo del electrón, sino en la continuidad o discontinuidad de una corriente eléctrica, si es alterna o continua o si es inducida, contra inducida, en fase o desfase (ver [[periférico de entrada]]).
+* Sistemas de archivo, son sistemas que permiten el almacenamiento a largo plazo de información que no se demandará por un largo lapso. Estos sistemas usan los conceptos de [[biblioteca]] para localizar la información demandada.
+* [[ASCII|Código ASCII]] es un método para la correspondencia de cadenas de bits permitiendo de esta forma la comunicación entre dispositivos digitales así como su proceso y almacenamiento, en la actualidad todos los sistemas informáticos utilizan el código ASCII para representar textos, gráficos, audio e infinidad de información para el control y manipulación de dispositivos digitales.
+
+En un editor de texto presionando las teclas {{Tecla|Alt}} + el número del código ASCII, aparecerá el carácter correspondiente, solamente funciona en un teclado que tenga las teclas numéricas.
+
+== Virus informáticos ==
+{{VT|Virus informático}}
+Los [[virus informático]]s son ''[[software]]'' o fragmentos de código<ref>{{Cita web|url=https://www.avast.com/es-es/c-computer-virus?hsSkipCache=true&hs_ungate__cos_renderer_combine_all_css_disable=true|título=¿Qué es un virus? {{!}} Herramienta para analizar y eliminar virus {{!}} Avast|fechaacceso=5 de abril de 2019|sitioweb=www.avast.com}}</ref> que tiene por objetivo alterar el funcionamiento normal de cualquier tipo de dispositivo informático o las funcionalidades de un programa, sin el permiso o el conocimiento del usuario, principalmente para lograr fines maliciosos. A modo de ejemplo, algunas acciones son: 
+
+* Unirse a un programa y modificar el comportamiento de este.
+* Mostrar mensajes o imágenes, generalmente molestas.
+* Ralentizar o bloquear la computadora, reducir el espacio en el disco u otras acciones que inutilizan el ordenador.
+* Destruir o [[Cifrado (criptografía)|cifrar]] la información almacenada.
+* Robo de datos: contraseñas, usuarios, y otros tipos de datos personales o corporativos.
+
+Hay muchas formas en que un computador puede infectarse con un virus, algunas de ellas son:
+
+* Mensajes dejados en redes sociales.
+* Archivos adjuntos en los mensajes de correo electrónico.
+* Sitios web sospechosos.
+* Insertar algún USB, DVD o CD con virus.
+* Descarga de aplicaciones o programas de internet.
+
+Los métodos de prevención y recuperación de datos tras sufrir una "infección" por un virus informática son diversos, pero actualmente existen programas [[antivirus]] que detectan una gran cantidad de ellos. Aun así siempre se recomienda: 
+* Hacer copias de seguridad de datos valiosos.
+* Usar siempre programas originales y rechazar copias de origen dudoso.
+
+== Véase también ==
+
+{{lista de columnas|2|
+* [[Historia de las ciencias de la computación]]
+* [[Anexo:Historia de la computación]]
+* [[Computadora]]
+* [[Ciencias de la computación]]
+* [[Teoría de la computación]]
+* [[Generaciones de computadoras]]
+* [[Primera generación de computadoras]]
+* [[Historia de las computadoras personales]]
+* [[Software]]
+* [[Mujeres en informática]]
+* [[Tecnología]]
+* [[Internet]]
+* [[Computadoras en la ciencia ficción]]
+* [[Internet en la ciencia ficción]]
+}}
+
+{{Portal|Informática}}
+
+== Referencias ==
+{{listaref|2}}
+
+== Enlaces externos ==
+
+{{Wikiquote|Informática}}
+{{Wikinews|Categoría:Informática}}
+{{Wikcionario|informática}}
+{{Commonscat|Computer science|informática}}
+
+
+{{Control de autoridades}}
+
+[[Categoría:Informática| ]]
+[[Categoría:Gestión de información]]

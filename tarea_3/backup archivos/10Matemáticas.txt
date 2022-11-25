@@ -1,0 +1,309 @@
+[[Archivo:Egyptian A'h-mosè or Rhind Papyrus (1065x1330).png|miniaturadeimagen|El [[Papiro de Ahmes|papiro]] egipcio de [[Ahmes (escriba)|Ahmes]]]]
+[[Archivo: Gregor Reisch, Margarita Philosophica, 1508 (1230x1615).png|miniatura|''Margarita filosófica'' (literalmente, "perla filosófica"): en este grabado de 1508 de [[Gregor Reisch]], monje cartujo, humanista y polígrafo alemán, se observa a Madame Aritmética instruyendo a un [[algorista]] (especialista en algoritmos) y a un [[abacista]] (especialista en el uso del ábaco), dos maneras de hacer los cálculos.]]
+
+[[Archivo: Euclid.jpg|miniatura|[[Euclides]] (matemático griego del siglo III a. C.), representado sosteniendo un [[compás (instrumento)|compás]], según lo imaginado por [[Rafael Sanzio]] en este detalle de ''[[La escuela de Atenas]]''.<ref>Ninguna semejanza o descripción de la apariencia física de Euclides durante su vida sobrevivió a la antigüedad. Por lo tanto, la representación de Euclides en las obras de arte depende de la imaginación del artista (véase [[Euclides]]).</ref>]]
+
+La '''matemática'''<ref name="DRAE">[http://lema.rae.es/drae/?val=matemática «matemática»], ''[[Diccionario de la lengua española]]'' (avance de la vigésima tercera edición). Consultado el 20 de enero de 2013. {{Cita|Utilízase más en plural con el mismo significado que en singular.}}</ref> (del [[latín]] ''mathematĭca'', y este del [[Griego antiguo|griego]] μαθηματικά, [[Romanización del griego|transliterado]] como ''mathēmatiká'', derivado de μάθημα, [[Wikipedia:Transliteración/Griego|tr.]] máthēma. '[[conocimiento]]') es una [[Ciencias formales|ciencia formal]] que surgió del estudio de las [[Figura geométrica|figuras geométricas]] y la [[aritmética]] con números. No existe una definición generalmente aceptada de las matemáticas; hoy en día se suelen describir como una ciencia que utiliza la lógica para examinar las propiedades y los patrones de las estructuras abstractas creadas por las definiciones lógicas.
+
+== Descripción ==
+Las [[ciencias naturales]] han hecho un uso extensivo de la matemática para explicar diversos fenómenos observables, tal como lo expresó [[Eugene Paul Wigner]] ([[Anexo:Ganadores del Premio Nobel de Física|Premio Nobel de Física en 1963]]):<ref>Libro "Del átomo a la mente", 2002, de Ignacio Martínez y Juan Luis Arsuaga. Capítulo 1 "La carta de Dios", subtítulo "El Libro de la Naturaleza", aproximadamente en el sitio 5.5% del libro.</ref>
+
+{{Cita|La enorme utilidad de la matemática en las ciencias naturales es algo que roza lo misterioso, y no hay explicación para ello. No es en absoluto natural que existan «leyes de la naturaleza», y mucho menos que el hombre sea capaz de descubrirlas. El milagro de lo apropiado que resulta el lenguaje de las matemáticas para la formulación de las leyes de la física es un regalo maravilloso que no comprendemos ni nos merecemos.}}
+
+[[Galileo Galilei]], en la misma línea, lo había expresado así<ref>Galileo Galilei, ''Il Saggiatore'' (en italiano) (Roma, 1623)</ref>:
+
+{{Cita|La filosofía está escrita en este gran libro, que está continuamente abierto ante nuestros ojos -me refiero al universo-, pero no se puede entender sin aprender primero a comprender el lenguaje y conocer los caracteres en los que está escrito. Está escrito en '''lenguaje matemático''' (...)}}
+
+Mediante la abstracción y el uso de la [[lógica]] en el [[razonamiento]], la matemática ha evolucionado basándose en el [[cálculo]] y las [[Medición|mediciones]], junto con el estudio sistemático de la [[Forma (figura)|forma]] y el [[Movimiento (física)|movimiento]] de los objetos físicos. Las matemáticas, desde sus comienzos, han tenido un fin práctico.
+
+Las explicaciones que se apoyaban en la lógica aparecieron por primera vez con la [[matemática helénica]], especialmente con los ''[[Elementos de Euclides|Elementos]]'' de [[Euclides]]. La matemática siguió desarrollándose, con continuas interrupciones, hasta que en el [[Renacimiento]] las innovaciones matemáticas interactuaron con los nuevos descubrimientos científicos. Como consecuencia, hubo una aceleración en la investigación que continúa hasta la actualidad.
+
+Hoy día, la matemática se usa en todo el mundo como una herramienta esencial en muchos campos, entre los que se encuentran las [[ciencias naturales]], la [[ciencias aplicadas]], las [[humanidades]], la [[medicina]] y las [[ciencias sociales]], e incluso disciplinas que, aparentemente, no están vinculadas con ella, como la [[música]] (por ejemplo, en cuestiones de resonancia armónica). Las [[Matemática aplicada|matemáticas aplicadas]], rama de la matemática destinada a la aplicación del conocimiento matemático a otros ámbitos, inspiran y hacen uso de los nuevos descubrimientos matemáticos y, en ocasiones, conducen al desarrollo de nuevas disciplinas. Los matemáticos también participan en la matemática pura, sin tener en cuenta la aplicación de esta ciencia, aunque las aplicaciones prácticas de la matemática pura suele ser descubiertas con el paso del tiempo.
+
+== Historia ==
+{{Artículo principal|Historia de las matemáticas}}
+Las matemáticas son una de las ciencias más antiguas. Floreció primero antes de la [[antigüedad]] en [[Mesopotamia]], [[India]] y [[Historia de China|China]], y más tarde en la antigüedad en Grecia y el [[helenismo]]. De ahí data la orientación hacia la tarea de "demostración puramente lógica" y la primera [[axiomatización]], a saber, la [[geometría euclidiana]]. En la [[Edad Media]] sobrevivió de forma independiente en el primer humanismo de las universidades y en el mundo árabe.
+
+A principios de la [[era moderna]], [[François Viète]] introdujo variables y [[René Descartes]] inauguró un enfoque computacional de la geometría mediante el uso de [[coordenadas]]. La consideración de las tasas de cambio ([[Cálculo infinitesimal#Modernidad|fluxión]]) así como la descripción de las tangentes y la determinación de los contenidos de las superficies ("[[Cuadratura (geometría)|cuadratura]]") condujeron al [[cálculo infinitesimal]] de [[Gottfried Leibniz|Gottfried Wilhelm Leibniz]] e [[Isaac Newton]]. La [[Mecánica clásica|mecánica de Newton]] y su [[Ley de gravitación universal|ley de la gravitación]] fueron también una fuente de orientación de problemas ''matemáticos'' como el [[problema de los tres cuerpos]] en los siglos siguientes.
+
+Otro de los principales problemas de la primera época moderna fue la solución de ecuaciones algebraicas cada vez más complicadas. Para hacer frente a esto, [[Niels Henrik Abel]] y [[Évariste Galois]] desarrollaron el concepto de [[Grupo (matemática)|grupo]], que describe las relaciones entre las simetrías de un objeto. El [[álgebra]] más reciente y, en particular, la [[geometría algebraica]] pueden considerarse como una profundización de estas investigaciones.
+
+Una idea entonces nueva en el intercambio de cartas entre [[Blaise Pascal]] y [[Pierre de Fermat]] en 1654 condujo a la solución de un viejo problema para el que ya existían otras soluciones, aunque controvertidas. El intercambio de cartas se considera el nacimiento de la teoría clásica de la probabilidad. Las nuevas ideas y métodos conquistaron muchos campos. Pero durante siglos, la teoría clásica de la probabilidad se dividió en escuelas separadas. Los intentos de definir explícitamente el término "probabilidad" sólo tuvieron éxito para casos especiales. Sólo la publicación del libro de texto de [[Andréi Kolmogórov|Andrei Kolmogorov]] en 1933 "''Los fundamentos de la Teoría de la Probabilidad"'' completó el desarrollo de los fundamentos de la teoría moderna de la probabilidad.
+
+En el transcurso del siglo XIX, el cálculo infinitesimal encontró su forma actual de [[Rigor matemático|rigurosidad]] gracias a los trabajos de [[Augustin Louis Cauchy|Augustin-Louis Cauchy]] y [[Karl Weierstraß|Karl Weierstrass]]. La [[teoría de conjuntos]] desarrollada por [[Georg Cantor]] hacia finales del siglo XIX es también indispensable en la matemática actual, aunque las paradojas del concepto ingenuo de conjuntos dejaron claro, en un primer momento, la incierta base sobre la que se asentaban las matemáticas.
+
+El desarrollo de la primera mitad del siglo XX estuvo influenciado por los [[Problemas de Hilbert|lista de 23 problemas matemáticos]] de [[David Hilbert]]. Uno de los problemas fue el intento de axiomatizar completamente las matemáticas; al mismo tiempo, se hicieron grandes esfuerzos de abstracción, es decir, el intento de reducir los objetos a sus propiedades esenciales. Así, [[Emmy Noether]] desarrolló los fundamentos del álgebra moderna, [[Felix Hausdorff]] desarrolló la [[topología]] general como el estudio de los [[espacios topológicos]], [[Stefan Banach]] desarrolló probablemente el concepto más importante del [[análisis funcional]], el [[espacio de Banach]] que lleva su nombre. Un nivel de abstracción aún mayor, un marco común para la consideración de construcciones similares de diferentes áreas de las matemáticas, fue finalmente creado por la introducción de la [[teoría de categorías]] por [[Samuel Eilenberg]] y [[Saunders Mac Lane]].
+
+==Introducción==
+
+===Etimología===
+
+La palabra «matemática» (del griego μαθηματικά ''mathēmatiká'', «cosas que se aprenden») viene del griego antiguo μάθημα (''máthēma''), que quiere decir «campo de estudio o instrucción». Las matemáticas requieren un esfuerzo de instrucción o aprendizaje, refiriéndose a áreas del conocimiento que sólo pueden entenderse tras haber sido instruido en las mismas, como la [[astronomía]]. «El arte matemática» (''μαθηματική τέχνη'', ''mathēmatikḗ tékhnē'') se contrapondría en esto a la música, «el arte de las [[musa]]s» (μουσική τέχνη, ''mousikē téchnē''), que sería un arte, como la poesía, [[retórica]] y similares, que se puede apreciar directamente, «que se puede entender sin haber sido instruido».<ref name="Heath">{{Cita libro |apellidos=Heath |nombre=Thomas |título=''A History of Greek Mathematics'' ("Una historia de las matemáticas griegas") |año=1921 |editorial=Oxford, Clarendon Press |id={{OCLC|2014918}}}}</ref> Aunque el término ya era usado por los [[pitagóricos]] (''matematikoi'') en el {{siglo|VI|a|s}}, alcanzó su significado más técnico y reducido de «estudio matemático» en los tiempos de [[Aristóteles]] ({{siglo|IV|a|s}}). Su adjetivo es μαθηματικός (''mathēmatikós''), «relacionado con el aprendizaje», lo cual, de manera similar, vino a significar «matemático». En particular, μαθηματική τέχνη (''mathēmatikḗ tékhnē''; en latín ''ars mathematica''), significa «el arte matemática».
+
+La forma más usada es el plural ''matemáticas'' (cuyo acortamiento es «mates»),<ref>{{Cita web |url=https://dle.rae.es/mates |título=mates |sitioweb=RAE}}</ref> que tiene el mismo significado que el singular<ref name=DRAE />y viene de la forma latina ''mathematica'' ([[Marco Tulio Cicerón|Cicerón]]), basada en el plural en griego τα μαθηματικά (''ta mathēmatiká''), usada por Aristóteles y que significa, a grandes rasgos, «todas las cosas matemáticas». Algunos autores, sin embargo, hacen uso de la forma singular del término; tal es el caso de [[Nicolas Bourbaki|Bourbaki]], en el tratado ''[[Elementos de matemática]]'' (''Élements de mathématique'', 1940), destaca la uniformidad de este campo aportada por la visión axiomática moderna, aunque también hace uso de la forma plural como en ''Éléments d'histoire des mathématiques'' (''Elementos de historia de las matemáticas'') (1969), posiblemente sugiriendo que es Bourbaki quien finalmente realiza la unificación de las matemáticas.<ref>{{Cita libro |apellidos=Maurice Marshaal |título=Bourbaki: a secret society of mathematicians |año=2006 |editorial=American Mathematical Society |isbn=978-0-8218-3967-6 |páginas=56 |idioma=inglés}}</ref> Así mismo, en el escrito ''L'Architecture des mathématiques'' (1948) plantea el tema en la sección «Matemáticas, singular o plural» donde defiende la unicidad conceptual de la matemática aunque hace uso de la forma plural en dicho escrito.<ref>{{Cita libro |apellidos=Francois Le Lionnais |título=Les grands courants de la penseé mathématique |año=1948 |páginas=35-47 |idioma=francés}}</ref>
+
+===Algunas definiciones de matemática===
+
+Establecer definiciones claras y precisas es el fundamento de la matemática, pero definirla ha sido difícil, se muestran algunas definiciones de pensadores famosos:
+
+*[[René Descartes]]: ([[Cirilo Flórez|Cirilo Flórez Miguel]], ed. Obra completa. Biblioteca de Grandes Pensadores 2004) «La matemática es la ciencia del orden y la medida, de bellas cadenas de razonamientos, todos sencillos y fáciles».
+*[[David Hilbert]]: (Putnam, Hilary: On the infinite. Philosophy of Mathematics, p.187, 1998). «En un cierto sentido, el análisis matemático es una sinfonía del infinito. La matemática es el sistema de las fórmulas demostrables».
+*[[Benjamin Peirce]]: (Nahin, Paul, The Story of i, p.68, 1998). «La matemática es la ciencia que extrae conclusiones necesarias».
+*[[Bertrand Russell]]: (Principia mathematica, 1913). «Las matemáticas poseen no solo la verdad, sino cierta belleza suprema. Una belleza fría y austera, como la de una escultura».
+*[[Ibo Bonilla]]: (¿Qué es matemática?, Academia.edu, 2014). «Hacer matemática es desentrañar los ritmos del Universo». «La matemática es la ciencia de estructurar una realidad estudiada, es el conjunto de sus elementos, proporciones, relaciones y patrones de evolución en condiciones ideales para un ámbito delimitado».
+*[[John David Barrow]]: (Imposibilidad. P 96. Gedisa, 1999). «En el fondo, matemática es el nombre que le damos a la colección de todas las pautas e interrelaciones posibles. Algunas de estas pautas son entre formas, otras en secuencias de números, en tanto que otras son relaciones más abstractas entre estructuras. La esencia de la matemática está en la relación entre cantidades y cualidades».
+
+===Epistemología y controversia sobre la matemática como ciencia===
+
+El carácter [[Epistemología|epistemológico]] y científico de la matemática ha sido ampliamente discutido. En la práctica, la matemática se emplea para estudiar relaciones cuantitativas, estructuras, [[Espacio métrico|relaciones geométricas]] y las [[Cálculo|magnitudes variables]]. Los [[matemático]]s buscan patrones,<ref>[[Lynn Steen|Steen, LA]] (29 de abril de 1988). ''Mathematics:The Science of Patterns (Scientific American Library, 1994)'' [[Science]], 240: 611-616.</ref><ref>{{Cita libro |apellidos=Keith Devlin |enlaceautor=Keith Devlin |título=Matemáticas: La ciencia de los patrones: La búsqueda de la Orden en la vida, la mente y el Universo |año=1996 |editorial=Scientific American |isbn=978-0-7167-5047-5}}</ref> formulan nuevas [[conjetura]]s e intentan alcanzar la [[verdad]] matemática mediante [[Razonamiento deductivo|deducciones]] [[Rigor|rigurosas]]. Estas les permiten establecer los [[axioma]]s y las [[Definición (matemática)|definiciones]] apropiados para dicho fin.<ref>Jourdain</ref> Algunas [[Definición|definiciones]] clásicas restringen las matemáticas al razonamiento sobre cantidades,<ref name=DRAE />aunque solo una parte de la matemática actual usa números, predominando el análisis lógico de construcciones abstractas no cuantitativas.
+
+Existe cierta discusión acerca de si los objetos matemáticos, como los números y [[Punto (geometría)|puntos]], realmente existen o simplemente provienen de la imaginación humana. El matemático [[Benjamin Peirce]] definió las matemáticas como «la ciencia que señala las conclusiones necesarias».<ref>Peirce, p.97</ref> Por otro lado:
+
+{{Cita|«cuando las leyes de la matemática se refieren a la realidad, no son exactas; cuando son exactas, no se refieren a la realidad».<ref>Einstein, p. 15. La cita es la respuesta de Einstein a la pregunta: «¿Cómo puede ser que las matemáticas, siendo después de todo un producto del pensamiento humano independiente de la experiencia, estén tan admirablemente adaptadas a los objetos de la realidad? [http://www.epsilones.com/paginas/definiendo/definiendo-einstein.html]»</ref>|[[Albert Einstein]]}}
+
+Se ha discutido el carácter científico de las matemáticas debido a que sus procedimientos y resultados poseen una firmeza e inevitabilidad inexistentes en otras disciplinas como pueden ser la [[física]], la [[química]] o la [[biología]]. Así, la matemática sería [[Tautología|tautológica]], infalible y ''[[A priori y a posteriori|a priori]]'', mientras que otras, como la [[geología]] o la [[fisiología]], serían falibles y ''a posteriori''. Son estas características lo que hace dudar de colocarse en el mismo rango que las disciplinas antes citadas. [[John Stuart Mill]] afirmaba:
+
+{{Cita|La lógica no observa ni inventa ni descubre, pero juzga.}}
+
+Así, los matemáticos pueden descubrir nuevos procedimientos para resolver [[Integración|integrales]] o [[teorema]]s, pero se muestran incapaces de descubrir un suceso que ponga en duda el [[Teorema de Pitágoras]] o cualquier otro, como sí sucede constantemente con las [[ciencias]] de la [[naturaleza]].<ref>{{Cita web |url=http://www.march.es/conferencias/anteriores/voz.aspx?p1=2462&l=1 |título=La matemática, instrumento universal de conocimiento: de Euclides a Gödel |apellido=Sánchez Ron |nombre=José Manuel |fecha=8 de febrero de 2000 |sitioweb=Aula Abierta: La ciencia a través de su historia |editorial=Fundación Juan March |ubicación=Madrid |formato=conferencia}}</ref>
+
+{| style="border:0; margin:0;"
+|[[Archivo: Teorema de Pitágoras.Pitágoras b.svg|miniatura|El [[teorema de Pitágoras]] es uno de los enunciados más conocidos y antiguos de las matemáticas.]]
+|[[Archivo: Abacus 6.png|miniatura|Un [[ábaco]], instrumento para [[Calculadora|efectuar operaciones]] [[aritmética]]s sencillas ([[suma]]s, [[resta]]s y también [[Multiplicación|multiplicaciones]]), fue muy utilizado en otros tiempos.]]
+|}
+
+La matemática puede ser entendida como ciencia; si es así debiera señalarse su objeto y su método. Sin embargo, algunos plantean que la matemática es un lenguaje formal, seguro, eficiente, aplicable al entendimiento de la naturaleza, tal como indicó [[Galileo Galilei|Galileo]]; además muchos fenómenos de carácter social, otros de carácter biológico o geológico, pueden ser estudiados mediante la aplicación de ecuaciones diferenciales, cálculo de probabilidades o teoría de conjunto.<ref>Takeuchi-Ramírz- Ruíz. ''Ecuaciones diferenciales''. Limusa, Departamento de Matemáticas, Universidad Nacional de Colombia, 3ra. edición (1978)</ref> Precisamente, el avance de la física y de la química ha exigido la invención de nuevos conceptos, instrumentos y métodos en la matemática, sobre todo en el análisis real, análisis complejo y el análisis matricial.<ref>Boyer. ''Historia de la matemática''</ref>
+
+==Aspectos formales, metodológicos y estéticos==
+
+===La inspiración, las matemáticas puras, aplicadas y la estética===
+
+[[Archivo: GodfreyKneller-IsaacNewton-1689.jpg|miniatura|''Sir'' [[Isaac Newton]] (1643-1727), comparte con [[Gottfried Leibniz|Leibniz]] la autoría del desarrollo del [[cálculo]] integral y diferencial.]]
+
+Es muy posible que el arte del cálculo haya sido desarrollado antes incluso que la escritura,<ref>{{Springer|título=Arithmetic|id=Arithmetic&oldid=17838}}</ref> relacionado fundamentalmente con la [[contabilidad]] y la administración de bienes, el [[comercio]], en la [[agrimensura]] y, posteriormente, en la [[astronomía]].
+
+Actualmente, todas las ciencias aportan problemas que son estudiados por matemáticos, al mismo tiempo que aparecen nuevos problemas dentro de las propias matemáticas. Por ejemplo, el [[físico]] [[Richard Feynman]] propuso la [[Integral de caminos (mecánica cuántica)|integral de caminos]] como fundamento de la [[mecánica cuántica]], combinando el razonamiento matemático y el enfoque de la física, pero todavía, no se ha logrado una definición plenamente satisfactoria en términos matemáticos. Igualmente, la [[teoría de cuerdas]], una teoría científica en desarrollo que trata de unificar las cuatro [[Interacciones fundamentales|fuerzas fundamentales de la física]], sigue inspirando a las más modernas matemáticas.<ref>{{Cita libro |apellidos=Johnson, Gerald W.; Lapidus, Michel L. |título=The Feynman Integral and Feynman's Operational Calculus |año=2002 |editor=[[Oxford University Press]]}}</ref>
+
+Algunas matemáticas solo son relevantes en el área en la que estaban inspiradas y son aplicadas para otros problemas en ese campo. Sin embargo, a menudo las matemáticas inspiradas en un área concreta resultan útiles en muchos ámbitos, y se incluyen dentro de los conceptos matemáticos generales aceptados. El notable hecho de que incluso la matemática ''más pura'' habitualmente tiene aplicaciones prácticas es lo que [[Eugene Paul Wigner|Eugene Wigner]] ha definido como «la irrazonable eficacia de las matemáticas en las [[Ciencias Naturales]]».<ref>[[Eugene Paul Wigner|Eugene Wigner]], 1960, "[http://www.dartmouth.edu/~matc/MathDrama/reading/Wigner.html La irracional eficacia de las matemáticas en la de Ciencias Exactas y Naturales]" ''[[Communications on Pure and Applied Mathematics]]'''''13'' '(1): 1-14.</ref>
+
+Como en la mayoría de las áreas de estudio, la explosión de los conocimientos en la era científica ha llevado a la especialización de las matemáticas. Hay una importante distinción entre las [[matemáticas puras]] y las [[matemáticas aplicadas]]. La mayoría de los matemáticos que se dedican a la investigación se centran únicamente en una de estas áreas y, a veces, la elección se realiza cuando comienzan su [[licenciatura]]. Varias áreas de las matemáticas aplicadas se han fusionado con otras áreas tradicionalmente fuera de las matemáticas y se han convertido en disciplinas independientes, como pueden ser la [[estadística]], la [[investigación de operaciones]] o la [[informática]].
+
+Aquellos que sienten predilección por las matemáticas, consideran que prevalece un aspecto estético que define a la mayoría de las matemáticas. Muchos matemáticos hablan de la ''elegancia'' de la matemática, su intrínseca [[estética]] y su [[belleza]] interna. En general, uno de sus aspectos más valorados es la simplicidad. Hay belleza en una simple y contundente [[Demostración matemática|demostración]], como la demostración de Euclides de la existencia de infinitos [[Número primo|números primos]], y en un elegante [[análisis numérico]] que acelera el cálculo, así como en la [[transformada rápida de Fourier]]. [[Godfrey Harold Hardy|G. H. Hardy]] en ''[[Apología de un matemático|A Mathematician's Apology]]'' (Apología de un matemático) expresó la convicción de que estas consideraciones estéticas son, en sí mismas, suficientes para justificar el estudio de las matemáticas puras.<ref>{{Cita libro |apellidos=Hardy, GH |título=A Mathematician's Apology |año=1940 |editorial=[[Cambridge University Press]]}}</ref> Los matemáticos con frecuencia se esfuerzan por encontrar demostraciones de los teoremas que son especialmente elegantes, el excéntrico matemático [[Paul Erdős]] se refiere a este hecho como la búsqueda de pruebas de "El Libro" en el que Dios ha escrito sus demostraciones favoritas.<ref>{{Cita libro |apellidos=Oro, Bonnie; Simons, A. Rogers |título=Proof and Other Dilemmas: Mathematics and Philosophy |año=2008 |editor=MAA}}</ref><ref>{{Cita libro |apellidos=Aigner, Martin; Ziegler, M. Gunter |título=Proofs from the Book |año=2001 |editorial=Springer}}</ref> La popularidad de la [[matemática recreativa]] es otra señal que nos indica el placer que produce resolver las preguntas matemáticas.
+
+===Notación, lenguaje y rigor===
+
+{{AP|Notación matemática}}
+
+[[Archivo: Leonhard Euler 2.jpg|miniatura|[[Leonhard Euler]]. Probablemente el más prolífico matemático de todos los tiempos.]]
+
+La mayor parte de la notación matemática que se utiliza hoy en día no se inventó hasta el {{siglo|XVIII||s|1}}.<ref>[https://web.archive.org/web/20090808225305/http://www.doe.virginia.gov/Div/Winchester/jhhs/math/facts/symbol.html Utilización de diversos símbolos matemáticos] (Véase [[Anexo:Símbolos matemáticos]])</ref> Antes de eso, las matemáticas eran escritas con palabras, un minucioso proceso que limitaba el avance matemático. En el {{siglo|XVIII||s}}, [[Leonhard Euler|Euler]], fue responsable de muchas de las notaciones empleadas en la actualidad. La notación moderna hace que las matemáticas sean mucho más fácil para los profesionales, pero para los principiantes resulta complicada. La notación reduce las matemáticas al máximo, hace que algunos símbolos contengan una gran cantidad de información. Al igual que la [[notación musical]], la notación matemática moderna tiene una sintaxis estricta y codifica la información que sería difícil de escribir de otra manera.
+
+[[Archivo:Infinity symbol.svg|miniatura|izquierda|150px|El símbolo de [[infinito]] en diferentes tipografías.]]
+
+El [[lenguaje]] matemático también puede ser difícil para los principiantes. Palabras tales como ''o'' y ''solo'' tienen significados más precisos que en lenguaje cotidiano. Además, palabras como ''[[Conjunto abierto|abierto]]'' y ''[[Cuerpo (matemáticas)|cuerpo]]'' tienen significados matemáticos muy concretos. La [[jerga]] matemática, o lenguaje matemático, incluye términos técnicos como ''[[homeomorfismo]]'' o ''[[Integración|integrabilidad]]''. La razón que explica la necesidad de utilizar la notación y la jerga es que el lenguaje matemático requiere más precisión que el lenguaje cotidiano. Los matemáticos se refieren a esta precisión en el lenguaje y en la lógica como el «rigor».
+
+El [[rigor]] es una condición indispensable que debe tener una [[demostración matemática]]. Los matemáticos quieren que sus teoremas a partir de los axiomas sigan un razonamiento sistemático. Esto sirve para evitar [[teorema]]s erróneos, basados en intuiciones falibles, que se han dado varias veces en la historia de esta ciencia.<ref>Véase ''[[Demostración inválida|falsa demostración]]'' para comprobar mediante ejemplos sencillos los errores que se pueden cometer en una demostración oficial. El [[teorema de los cuatro colores]] contiene ejemplos de demostraciones falsas aceptadas accidentalmente por otros matemáticos del momento.</ref> El nivel de rigor previsto en las matemáticas ha variado con el tiempo: los griegos buscaban argumentos detallados, pero en tiempos de [[Isaac Newton]] los métodos empleados eran menos rigurosos. Los problemas inherentes de las definiciones que Newton utilizaba dieron lugar a un resurgimiento de un análisis cuidadoso y a las demostraciones oficiales del {{siglo|XIX||s|1}}. Ahora, los matemáticos continúan apoyándose entre ellos mediante demostraciones asistidas por ordenador.<ref>Ivars Peterson,''La matemática turística'', Freeman, 1988, ISBN 0-7167-1953-3. p. 4 «Algunos se quejan de que el programa de ordenador no puede ser verificado correctamente», (en referencia a la Haken de Apple la prueba de color Teorema de los Cuatro).</ref>
+
+Un [[axioma]] se interpreta tradicionalmente como una «verdad evidente», pero esta concepción es problemática. En el ámbito formal, un axioma no es más que una cadena de símbolos, que tiene un significado intrínseco solo en el contexto de todas las fórmulas derivadas de un [[sistema axiomático]].
+
+===La matemática como ciencia===
+
+[[Archivo: Carl Friedrich Gauss.jpg|miniatura|[[Carl Friedrich Gauss]], apodado el «príncipe de los matemáticos», se refería a la matemática como «la reina de las ciencias».]]
+
+[[Carl Friedrich Gauss]] se refería a la matemática como «la reina de las ciencias».<ref>Waltershausen</ref> Tanto en el latín original ''Scientiārum Regīna'', así como en [[Idioma alemán|alemán]] ''Königin der Wissenschaften'', la palabra ''ciencia'' debe ser interpretada como (campo de) conocimiento. Si se considera que la [[ciencia]] es el estudio del mundo [[físico]], entonces las matemáticas, o por lo menos las [[matemáticas puras]], no son una ciencia.
+
+Muchos filósofos creen que las matemáticas no son experimentalmente [[Falsacionismo|falsables]] y, por ende, no son una ciencia según la definición de [[Karl Popper]].<ref>{{Cita libro |apellidos=Shasha, Dennis Elliot; Lazere, Cathy A. |título=Fuera de su mente: La vida y de 15 de los Grandes Descubrimientos científicos |año=1998 |página=228}}</ref> No obstante, en la [[Años 1930|década de 1930]] una importante labor en la lógica matemática demuestra que las matemáticas no puede reducirse a la lógica, y Karl Popper llegó a la conclusión de que «la mayoría de las teorías matemáticas son, como las de [[física]] y [[biología]], [[Método hipotético-deductivo|hipotético-deductivas]]. Por lo tanto, las matemáticas puras se han vuelto más cercanas a las ciencias naturales cuyas [[Hipótesis (lógica)|hipótesis]] son conjeturas, así ha sido hasta ahora».<ref>Popper 1995, p. 56</ref> Otros pensadores, en particular [[Imre Lakatos]], han solicitado una versión de [[Falsacionismo]] para las propias matemáticas.
+
+Una visión alternativa es que determinados campos científicos (como la [[física teórica]]) son matemáticas con [[axiomas]] que pretenden corresponder a la realidad. De hecho, el físico teórico, [[John Michael Ziman|J. M. Ziman]], propone que la ciencia es «conocimiento público» y, por tanto, incluye a las matemáticas.<ref>Ziman</ref> En cualquier caso, las matemáticas tienen mucho en común con muchos campos de las [[ciencias físicas]], especialmente la exploración de las consecuencias lógicas de las hipótesis. La [[intuición]] y la [[experimentación]] también desempeñan un papel importante en la formulación de [[conjetura]]s en las matemáticas y las otras ciencias. Las [[matemáticas experimentales]] siguen ganando representación dentro de las matemáticas. El [[cálculo]] y simulación están jugando un papel cada vez mayor tanto en las ciencias como en las matemáticas, atenuando la objeción de que las matemáticas no se sirven del [[método científico]]. En 2002 [[Stephen Wolfram]] sostiene, en su libro ''[[Un nuevo tipo de ciencia]]'', que la [[matemática computacional]] merece ser explorada empíricamente como un campo científico.
+
+Las opiniones de los matemáticos sobre este asunto son muy variadas. Muchos matemáticos consideran que llamar a su campo ''ciencia'' es minimizar la importancia de su perfil [[estético]], además supone negar su historia dentro de las siete [[artes liberales]]. Otros consideran que hacer caso omiso de su conexión con las ciencias supone ignorar la evidente conexión entre las matemáticas y sus aplicaciones en la ciencia y la [[ingeniería]], que ha impulsado considerablemente el desarrollo de las matemáticas. Otro asunto de [[debate]], que guarda cierta relación con el anterior, es si la matemática fue ''creada'' (como el arte) o ''descubierta'' (como la ciencia). Este es uno de los muchos temas de incumbencia de la [[Filosofía de la matemática|filosofía de las matemáticas]].
+
+Los premios matemáticos se mantienen generalmente separados de sus equivalentes en la ciencia. El más prestigioso premio dentro de las matemáticas es la [[Medalla Fields]],<ref>«Actualmente la Medalla Fields es sin duda el mejor y el más influyente premio en las matemáticas». Monastyrsky</ref><ref>Riehm</ref> fue instaurado en 1936 y se concede cada cuatro años. A menudo se le considera el equivalente del [[Premio Nobel]] para la ciencia. Otros premios son el [[Anexo:Premio Wolf en Matemática|Premio Wolf en matemática]], creado en 1978, que reconoce los logros en vida de los matemáticos, y el [[Premio Abel]], otro gran premio internacional, que se introdujo en 2003. Estos dos últimos se conceden por un excelente trabajo, que puede ser una investigación innovadora o la solución de un problema pendiente en un campo determinado. Una famosa lista de esos 23 problemas sin resolver, denominada los «[[Problemas de Hilbert]]», fue recopilada en 1900 por el matemático alemán [[David Hilbert]]. Esta lista ha alcanzado gran popularidad entre los matemáticos y, al menos, nueve de los problemas ya han sido resueltos. Una nueva lista de siete problemas fundamentales, titulada «[[Problemas del milenio]]», se publicó en 2000. La solución de cada uno de los problemas será recompensada con 1 millón de dólares. Curiosamente, tan solo uno (la [[hipótesis de Riemann]]) aparece en ambas listas.
+
+==Ramas de estudio de las matemáticas==
+
+{{AP|Áreas de las matemáticas}}
+
+La [[Sociedad Matemática Americana]] distingue unas 5000 ramas distintas de matemática.<ref>{{Cita web |url=http://www.ams.org/mathscinet/msc/pdfs/classifications2010.pdf |título=msc2010final-Aug10.pdf |fechaacceso=25 de octubre de 2016 |fecha={{fecha2|21|12|2009}} |sitioweb=ams.org}}</ref> En una subdivisión amplia de la matemática se distinguen cinco objetos de estudio básicos: la cantidad, la estructura, el espacio, el cambio y la variabilidad{{Cita requerida}} que se corresponden con la [[aritmética]], el [[álgebra]], la [[geometría]], el [[cálculo]] y la [[estadística]].<ref name=uDocz>[https://www.udocz.com/book/6130/matematicas-v-calculo-diferencial MATEMÁTICAS V. CÁLCULO DIFERENCIAL de IBAÑES/GARCÍA] https://www.udocz.com/</ref>Además, hay ramas de las matemáticas conectadas a otros campos como la [[lógica]] y [[teoría de conjuntos]], y las [[matemáticas aplicadas]]{{Cr}}.
+<!--SECCIÓN SIN REFERENCIAS
+
+*Los diferentes tipos de cantidades (números) han jugado un papel obvio e importante en todos los aspectos cuantitativos y cualitativos del desarrollo de la cultura, la ciencia y la tecnología.
+*El estudio de la estructura comienza al considerar las diferentes propiedades de los [[número]]s, inicialmente los [[números naturales]] y los [[números enteros]]. Las reglas que dirigen las operaciones aritméticas se estudian en el [[álgebra elemental]], y las propiedades más profundas de los números enteros se estudian en la [[teoría de números]]. Después, la organización de conocimientos elementales produjo los sistemas axiomáticos (teorías), permitiendo el descubrimiento de conceptos estructurales que en la actualidad dominan esta ciencia (e.g. estructuras categóricas). La investigación de métodos para resolver ecuaciones lleva al campo del [[álgebra abstracta]]. El importante concepto de [[Vector (matemática)|vector]], generalizado a [[espacio vectorial]], es estudiado en el [[álgebra lineal]] y pertenece a las dos ramas de la estructura y el espacio.
+*El estudio del espacio origina la [[geometría]], primero la [[geometría euclídea]] y luego la [[trigonometría]]. En su faceta avanzada el surgimiento de la topología da la necesaria y correcta manera de pensar acerca de las nociones de cercanía y continuidad de nuestras concepciones espaciales.
+*La comprensión y descripción del cambio en variables mensurables es el tema central de las [[ciencias naturales]] y del [[Cálculo infinitesimal|cálculo]]. Para resolver problemas que se dirigen en forma natural a relaciones entre una cantidad y su tasa de cambio, se estudian las [[Ecuación diferencial|ecuaciones diferenciales]] y de sus soluciones. Los números usados para representar las cantidades continuas son los [[números reales]]. Para estudiar los procesos de cambio se utiliza el concepto de [[función matemática]]. Los conceptos de [[derivada]] e [[integral]], introducidos por [[Isaac Newton|Newton]] y [[Leibniz]], representan un papel clave en este estudio, y son objetos del Cálculo diferencial e integral y, en cuanto al rigor, se ocupa el [[Análisis matemático]]. Es conveniente para muchos fines introducir función, derivación, integración en el conjunto C de los números complejos, así surgen el cálculo de variable compleja y el [[análisis complejo]]. El [[análisis funcional]] consiste en estudiar los espacios vectoriales de dimensión infinita, problemas cuya incógnita es una función.
+
+====Cantidad====
+
+El estudio de la cantidad comienza con los números, primero con los más familiares: números naturales y enteros, y las operaciones aritméticas entre ellos, que caracteriza la [[aritmética]]. Las propiedades más profundas acerca de los números se estudian en la [[teoría de números]], campo matemático que nos ha dado resultados populares como el [[último teorema de Fermat]]. La [[conjetura de los primos gemelos]] y la [[conjetura de Goldbach]] son algunos problemas sin solución de la teoría de números.
+
+Como el sistema de números se desarrolla, los enteros son reconocidos como un subconjunto de los números racionales (fracciones). Estos, a su vez están contenidos en los números reales, que son usados para representar cantidades continuas. Los números reales son generalizables a los números complejos. Estos son los primeros hacia una jerarquía de números que va a incluir a los cuaterniones y octoniones. También destacamos los números transfinitos, que formalizan en concepto de infinito. Otra área de estudio es el tamaño, lo que conduce a los números cardinales y a otra concepción del infinito: los números alef, que permiten comparar el tamaño de conjuntos infinitamente grandes.-->
+
+{{VT|Categoría:Áreas de las matemáticas}}
+
+===Matemática pura===
+
+{{AP|Matemáticas puras}}
+
+====Cantidad====
+
+{|style="border:1px solid #ddd; text-align:center; margin:auto" cellspacing="20"
+|{{Math|1, 2, 3, …}}
+|{{Math|…, −2, −1, 0, 1, 2, …}}
+|{{Math|−2, {{fracción|2|3}}, 1,21}}
+|{{Math|−''e'', <math> \boldsymbol {\sqrt 2}</math>, 3, <math> \boldsymbol \pi </math>}}
+|{{Math|2, ''i'', −2 + 3''i'',
+2''e'''''<sup>''i''{{fracción|4π|3}}</sup>'''}}
+|-
+|[[Número natural|Números naturales]]
+|[[Número entero|Enteros]]
+|[[Número racional|Números racionales]]
+|[[Número real|Números reales]]
+|[[Número complejo|Números complejos]]
+|}
+
+====Estructura====
+
+{|style="border:1px solid #ddd; text-align:center; margin:auto" cellspacing="15"
+|<math>\begin{matrix} (1,2,3) & (1,3,2) \\ (2,1,3) & (2,3,1) \\ (3,1,2) & (3,2,1) \end{matrix}</math>
+|[[Archivo:Elliptic curve simple.svg|96px]]
+|[[Archivo:Rubik's cube.svg|96px]]
+|[[Archivo:Group diagdram D6.svg|96px]]
+|[[Archivo:Lattice of the divisibility of 60.svg|96px]]
+|[[Archivo:Braid-modular-group-cover.svg|96px]]
+|-
+|[[Combinatoria]]
+|[[Teoría de números]]
+|[[Teoría de grupos]]
+|[[Teoría de grafos]]
+|[[Teoría del orden]]
+|[[Álgebra]]
+|}
+
+====Espacio====
+
+{|style="border:1px solid #ddd; text-align:center; margin:auto" cellspacing="15"
+|[[Archivo:Illustration to Euclid's proof of the Pythagorean theorem.svg|96px]]
+|[[Archivo:Sinusvåg 400px.png|96px]]
+|[[Archivo:Hyperbolic triangle.svg|96px]]
+|[[Archivo:Torus.png|96px]]
+|[[Archivo:Mandel zoom 07 satellite.jpg|96px]]
+|[[Archivo:Measure illustration.png|70px]]
+|-
+|[[Geometría]]
+|[[Trigonometría]]
+|[[Geometría diferencial]]
+|[[Topología]]
+|[[Fractal|Geometría fractal]]
+|[[Teoría de la medida]]
+|}
+
+====Cambio====
+
+{|style="border:1px solid #ddd; text-align:center; margin:auto" cellspacing="20"
+|[[Archivo:Integral as region under curve.svg|96px]]
+|[[Archivo:Vector field.svg|96px]]
+|[[Archivo:Airflow-Obstructed-Duct.png|96px]]
+|[[Archivo:Limitcycle.svg|96px]]
+|[[Archivo:Lorenz attractor.svg|96px]]
+|[[Archivo:Conformal grid after Möbius transformation.svg|96px]]
+|-
+|[[Cálculo]]
+|[[Cálculo vectorial]]
+|[[Ecuación diferencial|Ecuaciones diferenciales]]
+|[[Sistema dinámico|Sistemas dinámicos]]
+|[[Teoría del caos]]
+|[[Análisis complejo]]
+|}
+
+===Matemática aplicada===
+
+{{AP|Matemáticas aplicadas}}
+
+El concepto «matemática aplicada» se refiere a aquellos métodos y herramientas matemáticas que pueden ser utilizados en el análisis o resolución de problemas pertenecientes al área de las ciencias básicas o aplicadas.
+
+Muchos métodos matemáticos han resultado efectivos en el estudio de problemas en física, química, biología, medicina, ciencias sociales, ingeniería, economía, finanzas, ecología entre otras.
+
+Sin embargo, una posible diferencia es que en matemática aplicada se procura el desarrollo de la matemática «hacia afuera», es decir su aplicación o transferencia hacia el resto de las áreas. Y en menor grado «hacia dentro» o sea, hacia el desarrollo de la matemática misma. Este último sería el caso de la matemática pura o matemática elemental.
+
+La matemática aplicada se usa con frecuencia en distintas áreas tecnológicas para modelado, simulación y optimización de procesos o fenómenos, como el túnel de viento o el diseño de experimentos.
+
+====Estadística y ciencias de la decisión====
+
+La estadística es la rama de la matemática que estudia la variabilidad, así como el proceso aleatorio que la genera siguiendo leyes de probabilidad.<ref name="Ocaña-Riola">Ocaña-Riola, R. (2017) «La necesidad de convertir la Estadística en profesión regulada». ''Estadística Española'' '''59'''(194): 193-212.[https://www.ine.es/ss/Satellite?blobcol=urldata&blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3B+filename%3Dart_194_4.pdf&blobkey=urldata&blobtable=MungoBlobs&blobwhere=617%2F199%2Fart_194_4.pdf&ssbinary=true] {{Wayback|url=https://www.ine.es/ss/Satellite?blobcol=urldata&blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3B+filename%3Dart_194_4.pdf&blobkey=urldata&blobtable=MungoBlobs&blobwhere=617%2F199%2Fart_194_4.pdf&ssbinary=true|date=20181202202613}}</ref> Es un conocimiento fundamental para la investigación científica en algunos campos de la tecnología, como informática e ingeniería, y de las [[ciencias fácticas]], como economía, genética, sociología, psicología, medicina, contabilidad, etc.<ref>{{Cita web |url=https://www.lavozdigital.es/cadiz/provincia/lvdi-desarrollo-nuevas-tecnologias-refuerza-figura-profesional-matematicas-201901221014_noticia.html |título=El desarrollo de las nuevas tecnologías refuerza la figura del profesional en matemáticas |fechaacceso=24 de enero de 2019}}</ref>
+En ocasiones, estas áreas de conocimiento necesitan aplicar técnicas estadísticas durante su proceso de investigación factual, con el fin de obtener nuevos conocimientos basados en la experimentación y en la observación, precisando para ello recolectar, organizar, presentar y analizar un conjunto de datos numéricos y, a partir de ellos y de un marco teórico, hacer las inferencias apropiadas.
+
+Se consagra en forma directa al gran problema universal de cómo tomar decisiones inteligentes y acertadas en condiciones de incertidumbre. La estadística descriptiva sirve como fuente de instrucción en los niveles básicos de estadística aplicada a las ciencias fácticas y, por tanto, los conceptos manejados y las técnicas empleadas suelen ser presentadas de la forma más simple y clara posibles.
+
+====Matemática computacional====
+
+{|style="border:1px solid #ddd; text-align:center; margin:0 auto" cellspacing="20"
+|[[Archivo:Gravitation space source.png|96px]]
+|[[Archivo:BernoullisLawDerivationDiagram.svg|96px]]
+|[[Archivo:Composite trapezoidal rule illustration small.svg|96px]]
+|[[Archivo:Maximum boxed.png|96px]]
+|[[Archivo:Two red dice 01.svg|96px]]
+|[[Archivo:Oldfaithful3.png|96px]]
+|[[Archivo:Caesar3.svg|96px]]
+|-
+|[[Física matemática]]
+|[[Mecánica de fluidos|Dinámica de fluidos]]
+|[[Análisis numérico]]
+|[[Optimización (matemática)|Optimización]]
+|[[Teoría de la probabilidad]]
+|[[Estadística]]
+|[[Criptografía]]
+|-
+|[[Archivo:Cilindro comp.jpg|96px]]
+|[[Archivo:Market Data Index NYA on 20050726 202628 UTC.png|96px]]
+|[[Archivo:Arbitrary-gametree-solved.svg|96px]]
+|[[Archivo:Signal transduction pathways.svg|96px]]
+|[[Archivo:Ch4-structure.png|96px]]
+|[[Archivo:GDP PPP Per Capita IMF 2008.png|96px]]
+|[[Archivo:Simple feedback control loop2.svg|96px]]
+|-
+|[[Geometría computacional]]
+|[[Matemática financiera|Matemáticas financieras]]
+|[[Teoría de juegos]]
+|[[Biología matemática]]
+|[[Química matemática]]
+|[[Economía matemática]]
+|[[Teoría de control]]
+|}
+
+==Véase también==
+
+*[[Belleza matemática]]
+*[[Filosofía de las matemáticas]]
+*[[Fundamentos de las matemáticas]]
+*[[Matemáticas y arquitectura]]
+*[[Anexo:Matemáticos importantes|Matemáticos importantes]]
+*[[Modelo matemático]]
+*[[Artilugios matemáticos]]
+*[[Olimpiada Internacional de Matemática]]
+*[[Wikipedia:Clasificación Unesco de 6 dígitos/12 Matemática|Clasificación UNESCO de las matemáticas]]
+*[[Anexo:Cronología de la matemática]]
+*{{Portal|Matemática}}
+
+==Referencias==
+
+{{Listaref|2}}
+
+==Bibliografía==
+
+*[[Albert Einstein|Einstein, Albert]] (1923). «Geometry and experience», en ''[http://www.ibiblio.org/ebooks/Einstein/Sidelights/Einstein_Sidelights.pdf Sidelights on relativity]''. P. Dutton., Co.
+*Jourdain, Philip E. B., «[http://books.google.com/books?id=UQqLHyd8K0IC&pg=PA4&resnum=2 The Nature of Mathematics]», en ''The World of Mathematics''. Courier Dover Publications. ISBN 0-486-41153-8.
+*Peterson, Ivars. (2001). ''Mathematical Tourist, New and Updated Snapshots of Modern Mathematics''. Owl Books. ISBN 0-8050-7159-8.
+*[[Benjamin Pierce|Pierce, Benjamin]] (1882). ''[http://www.archive.org/details/linearassocalgeb00pierrich Linear Associative Algebra]''. Van Nostrand. Digitalizado por University of California Libraries. Págs. 97-229.
+*[[Karl Popper|Popper, Karl R.]] (1995). «On knowledge», en ''In Search of a Better World: Lectures and Essays from Thirty Years''. Routledge. ISBN 0-415-13548-6.
+*Riehm, Carl (August 2002). «[http://www.ams.org/notices/200207/comm-riehm.pdf The Early History of the Fields Medal]», en ''Notices of the AMS''. AMS 49 (7). Págs. 778–782.
+*[[Wolfgang Sartorius von Waltershausen|Waltershausen, Wolfgang Sartorius von]] (1856, repr. 1965). ''Gauss zum Gedächtniss''. Sändig Reprint Verlag H. R. Wohlwend. ISBN 3-253-01702-8.
+*Ziman, J.M., F.R.S. (1968). ''[http://info.med.yale.edu/therarad/summers/ziman.htm Public Knowledge:An essay concerning the social dimension of science]''. Cambridge University Press.
+
+==Enlaces externos==
+
+*{{Wikcionario|Matemática}}
+*{{Wikisource|Categoría:Matemáticas|Matemáticas}}
+
+{{Control de autoridades}}
+
+[[Categoría:Matemáticas]]
