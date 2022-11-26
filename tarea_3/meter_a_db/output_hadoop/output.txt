@@ -1,0 +1,22 @@
+Cristián	1	3UniversidadDiego Portales txt
+Cristían	1	3UniversidadDiego Portales txt
+Cristóbal	1	2Macrodatos txt
+Critical	1	10Matemáticas txt
+Cronología	1	9Algoritmo txt
+Croom	1	4Informática txt
+Crouch	1	3UniversidadDiego Portales txt
+Cruch	1	1Universo txt
+Crunch	5	3UniversidadDiego Portales txt
+Cruz	1	1Universo txt
+Crésida	2	2Macrodatos txt
+Crítica	1	2Macrodatos txt
+Críticas	4	6Cienciasde la computación txt
+Csab	2	3UniversidadDiego Portales txt
+Cuadra	2	10Matemáticas txt
+Cuadratura	1	6Cienciasde la computación txt
+Cuando	10	10Matemáticas txt
+Cuatro	1	3UniversidadDiego Portales txt
+Cuenta	3	10Matemáticas txt
+Cuerpo	1	3UniversidadDiego Portales txt
+Cuevas	1	2Macrodatos txt
+Cukier	2	9Algoritmo txt
