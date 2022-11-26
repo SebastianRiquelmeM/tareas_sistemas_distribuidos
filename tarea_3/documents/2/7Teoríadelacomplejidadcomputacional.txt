@@ -1,3 +1,4 @@
+7Teoríade la complejidad computacional.txt
 {{PA|referencias adicionales|copyedit}}
 La '''teoría de la complejidad computacional'''<ref name="Sin-nombre-p2KZ-1">{{Cita web|url=https://www.youtube.com/watch?v=OKg25T99Q4Q&t=11s|título=Complejidad Computacional}}</ref> o '''teoría de la complejidad informática''' es una rama de la [[teoría de la computación]] que se centra en la clasificación de los [[Problema computacional|problemas computacionales]] de acuerdo con su dificultad inherente, y en la relación entre dichas [[Clase de complejidad|clases de complejidad]].<ref>{{cita web |apellido=Dean |nombre=Walter |título=Computational Complexity Theory |url=https://plato.stanford.edu/entries/computational-complexity/ |website=The Stanford Encyclopedia of Philosophy |editorial=Metaphysics Research Lab, Stanford University |año=2016 |idioma=inglés}}</ref>
 

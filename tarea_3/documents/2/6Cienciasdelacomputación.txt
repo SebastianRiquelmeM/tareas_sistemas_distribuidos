@@ -1,3 +1,4 @@
+6Cienciasde la computación.txt
 <div class="thumb tright"><div class="thumbinner" style="width:300px;">
 {| style="border:1px solid #ccc;"
 |-

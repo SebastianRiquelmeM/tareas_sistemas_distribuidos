@@ -25,13 +25,13 @@ exports.generateArticles = () => {
 			if (i + 1 <= 5) {
 				createDocuments.createDocuments(
 					"./documents/1/",
-					String(i + 1) + articles[i],
+					String(i + 1) + articles[i].replace(" ", ""),
 					data
 				);
 			} else {
 				createDocuments.createDocuments(
 					"./documents/2/",
-					String(i + 1) + articles[i],
+					String(i + 1) + articles[i].replace(" ", ""),
 					data
 				);
 			}

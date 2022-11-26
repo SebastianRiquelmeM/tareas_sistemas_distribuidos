@@ -9,7 +9,7 @@ word = None
 
 for line in sys.stdin:
     line = line.strip()
-    word, count = line.split('\t',1)
+    word, count, documento = line.split('\t',2)
 
     try:
         count = int(count)
@@ -20,10 +20,10 @@ for line in sys.stdin:
         current_count += count
     else:
         if current_word:
-            print('{}\t{}'.format(current_word,current_count))
+            print('{}\t{}\t{}'.format(current_word,current_count, "documento 1"))
         current_word = word
         current_count = count
 
 
 if current_word == word:
-    print('{}\t{}'.format(current_word,current_count))
+    print('{}\t{}\t{}'.format(current_word,current_count, "documento 1"))

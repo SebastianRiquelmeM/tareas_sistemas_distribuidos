@@ -1,3 +1,4 @@
+5Programación.txt
 {{referencias adicionales|t=20160615172520}}
 {{otros usos}}
 La '''programación''' es el proceso de crear un [[conjunto de instrucciones]] que le dicen a una computadora como realizar algún tipo de tarea. Pero no solo la acción de escribir un [[Lenguaje de programación|código]] para que la computadora o el [[software]] lo ejecute. Incluye, además, todas las tareas necesarias para que el código funcione correctamente y cumpla el objetivo para el cual se escribió.<ref name=":0">{{Cita libro|título=Introducción a la programación.|url=https://www.worldcat.org/oclc/923747840|editorial=Larousse - Grupo Editorial Patria|fecha=2000|fechaacceso=2022-04-25|isbn=978-607-438-920-3|oclc=923747840|nombre=Mihaela|apellidos=Juganaru Mathieu}}</ref> 

@@ -1,3 +1,4 @@
+9Algoritmo.txt
 {{distinguir|Logaritmo}}
 [[Archivo:LampFlowchart-es.svg|thumb|Los [[diagrama de flujo|diagramas de flujo]] sirven para representar algoritmos de manera gráfica]]
 [[Archivo:Diagram for the computation of Bernoulli numbers.jpg|thumb|Diagrama de [[Ada Lovelace]] de la "nota G", el primer algoritmo informático publicado]]
