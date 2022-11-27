@@ -1,0 +1,15 @@
+version: "3"
+services:
+    mariadb:
+        image: mariadb:10.3.9
+        container_name: distribuidos-mariadb
+        restart: "on-failure"
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+            - MYSQL_DATABASE=${DATABASE_NAME}
+        volumes:
+            - ${PWD}
+            - ./database:/docker-entrypoint-initdb.d #Carga los datos de .sql existentes en el archivo .sql que esta en database
+            - ./docker/mysql-data:/var/lib/mysql #Mantiene datos fuera del contenedor, para que no se pierdan.

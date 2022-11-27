@@ -5,7 +5,7 @@ docker rmi -f hadoop
 echo "imagen borrada"
 #Path to the Dockerfile
 echo "entro a la carpeta del dockerfile"
-cd /home/seba/Desktop/Estudio/Sistemas_distribuidos/Tareas/tarea_3/map-reduce-hadoop-main/
+cd /home/seba/Desktop/Estudio/Sistemas_distribuidos/Tareas/tarea_3/map_reduce/map-reduce-hadoop-main/
 echo "build de la imagen"
 docker build -t hadoop .
 echo "Build realizado"
