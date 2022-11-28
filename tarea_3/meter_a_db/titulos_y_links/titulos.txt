@@ -1,0 +1,10 @@
+1 Universo https://es.wikipedia.org/wiki/Universo
+2 Macrodatos https://es.wikipedia.org/wiki/Macrodatos
+3 UniversidadDiegoPortales https://es.wikipedia.org/wiki/Universidad_Diego_Portales
+4 Informática https://es.wikipedia.org/wiki/Inform%C3%A1tica
+5 Programación https://es.wikipedia.org/wiki/Programaci%C3%B3n
+6 Cienciasdelacomputación https://es.wikipedia.org/wiki/Ciencias_de_la_computaci%C3%B3n
+7 Teoríadelacomplejidadcomputacional https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_complejidad_computacional
+8 Análisisdealgoritmos https://es.wikipedia.org/wiki/An%C3%A1lisis_de_algoritmos#:~:text=El%20t%C3%A9rmino%20an%C3%A1lisis%20de%20algoritmos,de%20los%20recursos%20que%20necesita.
+9 Algoritmo https://es.wikipedia.org/wiki/Algoritmo
+10 Matemáticas https://es.wikipedia.org/wiki/Matem%C3%A1ticas
