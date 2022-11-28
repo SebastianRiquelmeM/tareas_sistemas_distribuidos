@@ -2,3 +2,4 @@
 ./tarea 1/crawler/links.txt
 ./tarea 1/crawler/linksepicos.txt
 *.mp4
+node_modules/
