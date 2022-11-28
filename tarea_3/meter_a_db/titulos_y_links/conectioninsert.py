@@ -1,14 +1,14 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
+  host="127.0.01",
   user="root",
-  passwd="",
-  database="datos"
+  passwd="rootpass",
+  database="tarea3"
 )
 mycursor = mydb.cursor()
 
-for renglon in open ('/home/bastian/tareas_sistemas_distribuidos/tarea_3/meter_a_db/titulos_y_links/titulos.txt'):
+for renglon in open ('/home/seba/Escritorio/Estudio/sistemas_distribuidos/tareas/tarea_3/meter_a_db/titulos_y_links/titulos.txt'):
     partes = renglon.split()
     #print(partes)
     print(partes[0])
@@ -18,7 +18,7 @@ for renglon in open ('/home/bastian/tareas_sistemas_distribuidos/tarea_3/meter_a
     link = partes[2]
 
 
-    sql = "INSERT INTO datos.TITULOS(id,titulo,link)VALUES(%s,%s,%s)"
+    sql = "INSERT INTO tarea3.TITULOS(id,titulo,link)VALUES(%s,%s,%s)"
     val = (id_texto,titulo,link)
     mycursor.execute(sql,val)
     mydb.commit()
